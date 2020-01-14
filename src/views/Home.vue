@@ -17,7 +17,7 @@
 				</div>
 
 				<div class="section-content clearfix">
-					<b-img-lazy thumbnail fluid src="img/adeyinka.jpeg" width="150" height="150" :alt="$store.state.name" rounded="top" class="float-right"></b-img-lazy>
+					<b-img-lazy thumbnail fluid src="img/adeyinka.jpg" width="150" height="150" :alt="$store.state.name" rounded="top" class="float-right"></b-img-lazy>
 
 					<p>
 						Professionally, I engage in maximizing my time and effort to learning and building software solutions through the various platforms of software engineering. I enjoy coding because I see it as an expression of art and critical thinking, from its build to its core.
