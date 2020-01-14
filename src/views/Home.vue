@@ -44,7 +44,7 @@
 							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/160/150/150" alt="app" rounded="top" class="float-left"></b-img-lazy>
 
 							<h5>Mobile App Development</h5>
-							<p>Began my precious journey into becoming a FlutterDev in 2019, and with <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="__blank">Net Ninja's</a> tutorials, I hope to become fully equipped with knowledge and skill by the end of the year.</p>
+							<p>Began my precious journey into becoming a FlutterDev in 2019, and with <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="__blank">Net Ninja</a>'s tutorials, I hope to become fully equipped with knowledge and skill by the end of the year.</p>
 						</div>
 					</b-row>
 					<b-row>
