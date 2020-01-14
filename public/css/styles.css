@@ -1,5 +1,71 @@
-@import url('https://fonts.googleapis.com/css?family=Acme&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Righteous&display=swap');
 
-body {
-	font-family: 'Acme', sans-serif;
+* {
+	font-family: 'Fredoka One', cursive;
+	font-family: 'Righteous', cursive;
+}
+.header {
+	padding: 15% 0%;
+	background-image: url(https://picsum.photos/id/311/1655/855.jpg);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: scroll;
+	color: #fff;
+}
+.header .title {
+	font-size: 5em;
+	letter-spacing: 0.05em;
+	text-shadow: 1px 1px 2px black; 
+}
+.header .subtitle {
+	font-size: 1em;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	color: #999999;
+}
+.section {
+	margin: 50px auto;
+}
+.section-header {
+	margin: 15px auto;
+}
+.section-title {
+	font-size: 2em;
+}
+.section-title::after {
+	content: "—";
+	margin-left: 10px;
+	filter: blur(2px);
+	-webkit-filter: blur(2px);
+	color: #05904D;
+}
+.section-subtitle {
+	color: #999999;
+}
+.section-content h5 {
+	text-decoration: underline;
+}
+.section-content p {
+	line-height: 2.5em !important;
+	text-align: justify;
+}
+.section-content img.float-left {
+	margin-right: 20px;
+}
+.section-content img.float-right {
+	margin-left: 20px;
+}
+.gallery-pagination, .tools-pagination {
+    position: absolute;
+    text-align: center;
+    -webkit-transition: 300ms opacity;
+    -o-transition: 300ms opacity;
+    transition: 300ms opacity;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+    z-index: 10;
+}
+footer {
+	padding: 20px;
+	background-color: #eee;
 }

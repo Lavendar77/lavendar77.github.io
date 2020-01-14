@@ -6,15 +6,10 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+import './plugins/vue-page-title'
+import './plugins/vue-awesome-swiper'
+import './plugins/vue-moment'
 
-// Control HTML pages meta title
-import VuePageTitle from 'vue-page-title' 
-Vue.use(VuePageTitle, {
-	suffix: ' — ' + store.getters.getName,
-	router
-})
-
-// Font-Awesome
 Vue.component('v-icon', require('vue-awesome'))
 
 Vue.config.productionTip = false
