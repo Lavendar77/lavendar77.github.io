@@ -119,37 +119,6 @@
 					</p>
 				</div>
 			</div>
-
-			<!-- My gallery -->
-			<div class="section">
-				<div class="section-header">
-					<div class="section-title">My Gallery</div>
-					<div class="section-subtitle">Collection of images that describe who I am 🖤</div>
-				</div>
-				<div class="section-content">
-					<swiper :options="galleryOption">
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(201)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(191)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(169)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(177)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(179)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<swiper-slide>
-							<b-img-lazy v-bind="myGallery" :src="getGalleryImageUrl(219)" alt="Image"></b-img-lazy>
-						</swiper-slide>
-						<div class="gallery-pagination" slot="pagination"></div>
-					</swiper>
-				</div>
-			</div>
 		</b-container>
 	</div>
 </template>
@@ -159,23 +128,6 @@
 		name: 'Home',
 		data () {
 			return {
-				myGallery: {
-					center: true,
-					fluidGrow: true,
-					blank: true,
-					blankColor: '#bbb',
-					width: 600,
-					height: 400,
-					class: 'my-5'
-				},
-				galleryOption: {
-					slidesPerView: 3,
-					spaceBetween: 30,
-					pagination: {
-						el: '.gallery-pagination',
-						clickable: true
-					}
-				},
 				myTools: {
 					center: true,
 					fluidGrow: true,
@@ -196,10 +148,6 @@
 			}
 		},
 		methods: {
-			getGalleryImageUrl (imageId) {
-				const { width, height } = this.myGallery
-				return `https://picsum.photos/${width}/${height}/?image=${imageId}`
-			},
 			getToolImageUrl (name) {
 				return `img/tools/${name}.jpg`
 			},

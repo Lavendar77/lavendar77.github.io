@@ -33,13 +33,6 @@
 	font-size: 2em;
 	font-weight: 800;
 }
-.section-title::after {
-	content: "—";
-	margin-left: 10px;
-	filter: blur(2px);
-	-webkit-filter: blur(2px);
-	color: #05904D;
-}
 .section-subtitle {
 	color: #999999;
 }
@@ -55,6 +48,9 @@
 }
 .section-content img.float-right {
 	margin-left: 20px;
+}
+.card-title {
+	font-weight: 600;
 }
 .gallery-pagination, .tools-pagination {
     position: absolute;
