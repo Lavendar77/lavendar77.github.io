@@ -1,20 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Fredoka+One|Righteous&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
 * {
-	font-family: 'Fredoka One', cursive;
-	font-family: 'Righteous', cursive;
+	font-family: 'Montserrat', sans-serif;
 }
 .header {
-	padding: 15% 0%;
-	background-image: url(https://picsum.photos/id/311/1655/855.jpg);
+	padding: 17% 0%;
+	background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url(https://picsum.photos/id/48/1655/855.jpg?grayscale);
 	background-repeat: no-repeat;
-	background-position: center;
+	background-position: center top;
 	background-attachment: scroll;
 	color: #fff;
 }
 .header .title {
 	font-size: 5em;
-	letter-spacing: 0.05em;
+	letter-spacing: 0.02em;
 	text-shadow: 1px 1px 2px #000000; 
 }
 .header .subtitle {
@@ -32,6 +31,7 @@
 }
 .section-title {
 	font-size: 2em;
+	font-weight: 800;
 }
 .section-title::after {
 	content: "—";
@@ -44,10 +44,10 @@
 	color: #999999;
 }
 .section-content h5 {
-	text-decoration: underline;
+	font-weight: 600;
 }
 .section-content p {
-	line-height: 2.5em !important;
+	line-height: 2em !important;
 	text-align: justify;
 }
 .section-content img.float-left {

@@ -35,13 +35,13 @@
 				<div class="section-content">
 					<b-row>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
-							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/0/150/150" alt="web" rounded="top" class="float-left"></b-img-lazy>
+							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/0/160/160" alt="web" rounded="top" class="float-left"></b-img-lazy>
 
 							<h5>Web Development</h5>
 							<p>Been engaged with the web for most of my years in software development. Laravel is my go-to framework to building efficient web applications; whilst Vue.js is just a "view" of life.</p>
 						</div>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
-							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/160/150/150" alt="app" rounded="top" class="float-left"></b-img-lazy>
+							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/160/160/160" alt="app" rounded="top" class="float-left"></b-img-lazy>
 
 							<h5>Mobile App Development</h5>
 							<p>Began my precious journey into becoming a FlutterDev in 2019, and with <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="__blank">Net Ninja</a>'s tutorials, I hope to become fully equipped with knowledge and skill by the end of the year.</p>
@@ -49,13 +49,13 @@
 					</b-row>
 					<b-row>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
-							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/119/150/150" alt="project" rounded="top" class="float-left"></b-img-lazy>
+							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/119/160/160" alt="project" rounded="top" class="float-left"></b-img-lazy>
 
 							<h5>Project Management</h5>
 							<p>Managing projects has been one of skills I am proud of over the years. With the highest grade in my undergraduate final year project (89%), I am quite confident.</p>
 						</div>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
-							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/1025/150/150" alt="adventure" rounded="top" class="float-left"></b-img-lazy>
+							<b-img-lazy thumbnail fluid src="https://picsum.photos/id/1025/160/160" alt="adventure" rounded="top" class="float-left"></b-img-lazy>
 
 							<h5>Nature & Movies</h5>
 							<p>Oh! How I love the solitude of a quiet life with nature and a chill of Netflix; keeps my imagination soaring high. I simply enjoy the life of charity and love.</p>
