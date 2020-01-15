@@ -5,7 +5,6 @@
 		<div class="container text-center section">
 			<h5>Connect via</h5>
 			<b-button-group>
-				<b-button :href="$store.state.skype" target="__blank" variant="info">Skype</b-button>
 				<b-button :href="$store.state.linkedin" target="__blank" variant="primary">LinkedIn</b-button>
 				<b-button :href="$store.state.twitter" target="__blank" variant="success">Twitter</b-button>
 				<b-button :href="'mailto:' + $store.state.email" target="__blank" variant="danger">Email</b-button>

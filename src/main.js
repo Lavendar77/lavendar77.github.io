@@ -10,8 +10,6 @@ import './plugins/vue-page-title'
 import './plugins/vue-awesome-swiper'
 import './plugins/vue-moment'
 
-Vue.component('v-icon', require('vue-awesome'))
-
 Vue.config.productionTip = false
 
 new Vue({

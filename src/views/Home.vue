@@ -186,8 +186,8 @@
 					class: 'my-5'
 				},
 				toolsOption: {
-					slidesPerView: 6,
-					spaceBetween: 30,
+					slidesPerView: 4,
+					spaceBetween: 50,
 					pagination: {
 						el: '.tools-pagination',
 						clickable: true
