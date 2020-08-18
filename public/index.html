@@ -10,14 +10,6 @@
 		<meta name="language" content="English">
 		<meta name="keywords" content="portfolio, resume">
 
-		<!-- Manifest -->
-		<meta name="msapplication-TileImage" content="<%= BASE_URL %>favicon.ico">
-		<meta name="theme-color" content="#016b2c">
-		<meta name="msapplication-TileColor" content="#044f22">
-		<meta name="apple-mobile-web-app-capable" content="yes">
-		<meta name="apple-mobile-web-app-status-bar-style" content="#016b2c">
-		<meta name="apple-mobile-web-app-title" content="Adeyinka Adefolurin">
-
 		<!-- Open Graph / Facebook -->
 		<meta property="og:type" content="website">
 		<meta property="og:url" content="<%= BASE_URL %>">
@@ -32,11 +24,20 @@
 		<meta property="twitter:description" content="Adeyinka Adefolurin's Resume">
 		<meta property="twitter:image" content="<%= BASE_URL %>img/icons/logo.png">
 
-		<title>Adeyinka Adefolurin</title>
+		<title><%= htmlWebpackPlugin.options.title %></title>
 
 		<link rel="icon" href="<%= BASE_URL %>favicon.ico">
 
-		<link rel="stylesheet" type="text/css" href="<%= BASE_URL %>css/styles.css">
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=UA-175659326-1"></script>
+		<script>
+			window.dataLayer = window.dataLayer || []
+			function gtag() {
+				dataLayer.push(arguments)
+			}
+			gtag('js', new Date())
+			gtag('config', 'UA-175659326-1')
+		</script>
 	</head>
 	<body>
 		<noscript>
@@ -44,6 +45,8 @@
 		</noscript>
 
 		<div id="app"></div>
+
+		<script src="https://profile.codersrank.io/widget/widget.js"></script>
 		<!-- built files will be auto injected -->
 	</body>
 </html>

@@ -8,6 +8,33 @@ export default {
 	state: {
 		projects: [
 			{
+				name: 'ACOMART',
+				subtitle: 'The Africa Content Marketplace',
+				content: 'ACOMART is a platform dedicated to the global equitable promotion and acceleration of Afrocentric content. We are home to the ever Virtual Screening Room for African films and series content buyers can explore the vast catalogue and make informed content acquisition decisions.',
+				website: 'https://acomart.tv/',
+				image: 'acomart',
+				completed_at: '2020-12-31',
+				collaborated: true
+			},
+			{
+				name: 'Afrostream',
+				subtitle: 'Streaming African Films',
+				content: '',
+				website: 'https://myafrostream.tv/',
+				image: 'myafrostream',
+				completed_at: '2020-12-31',
+				collaborated: true
+			},
+			{
+				name: 'AETI Online Training Platform',
+				subtitle: 'Online Training Platform',
+				content: 'Our programmes are affordable to bridge the learning gaps, between the academia and what is required by Industry, engineering services and supporting skill acquisition of mid-career professionals.',
+				website: 'http://onlinetraining.aetinigeria.com/',
+				image: 'aeti',
+				completed_at: '2020-08-18',
+				collaborated: true
+			},
+			{
 				name: 'SavyCon',
 				subtitle: 'Hire a vendor for your project',
 				content: 'Savycon.com is a reliable outsourcing platform with ads features tailored to redefining outsourcing in the best way clients and freelancers appreciate.',
@@ -19,7 +46,7 @@ export default {
 				name: 'NextLaw Africa',
 				subtitle: 'Enabling Legal Practitioners in Africa through Technology',
 				content: 'NextLaw is a legal platform for practitioners across Africa, enabling them through technology. They provide legal services to businesses and practitioners.',
-				website: 'http://nextlaw.africa/',
+				website: 'https://nextlaw.africa/',
 				image: 'nextlaw',
 				completed_at: '2019-07-02'
 			},
@@ -27,14 +54,14 @@ export default {
 				name: 'Dream Builders International',
 				subtitle: 'Real Estate Platform',
 				content: 'Dream Builders International is a real estate company that provides the best service when it comes to rentage, buying and selling of property online.',
-				website: 'http://dreambuildersinter.com/',
+				website: null,
 				image: 'dreambuildersinter',
 				completed_at: '2019-05-14'
 			},
 			{
 				name: 'MartAdef Inc.',
-				subtitle: 'Organization Website',
-				content: 'MartAdef Inc. shows my indepth service portfolio. It kind of showcases all of my rendered services to its core and how well I have been able to improve my skills.',
+				subtitle: 'Sample Website',
+				content: 'This is one of the very first websites I designed actually with Mobirise.',
 				website: 'http://martadefinc.000webhostapp.com/',
 				image: 'martadef',
 				completed_at: '2018-01-01'
@@ -45,11 +72,7 @@ export default {
 	getters: {
 		getProjects (state) {
 			return state.projects.sort((a, b) => {
-				var x = a.completed_at.toLowerCase();
-				var y = b.completed_at.toLowerCase();
-				if (x < y) {return 1;}
-				if (x > y) {return -1;}
-				return 0;
+				return b.completed_at.localeCompare(a.completed_at)
 			})
 		}
 	},

@@ -6,7 +6,7 @@ Vue.use(Vuex)
 export default {
 	namespaced: true,
 	state: {
-		tools: ['laravel', 'vuejs', 'git', 'flutter', 'aws', 'vultr']
+		tools: ['laravel', 'vuejs', 'git', 'vuetify', 'flutter', 'aws', 'vultr']
 	},
 	mutations: {},
 	getters: {
