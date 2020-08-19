@@ -32,7 +32,7 @@ export default {
 				website: 'http://onlinetraining.aetinigeria.com/',
 				image: 'aeti',
 				completed_at: '2020-08-18',
-				collaborated: true
+				collaborated: false
 			},
 			{
 				name: 'SavyCon',
@@ -40,7 +40,8 @@ export default {
 				content: 'Savycon.com is a reliable outsourcing platform with ads features tailored to redefining outsourcing in the best way clients and freelancers appreciate.',
 				website: 'http://savycon.com/',
 				image: 'savycon',
-				completed_at: '2019-09-24'
+				completed_at: '2019-09-24',
+				collaborated: false
 			},
 			{
 				name: 'NextLaw Africa',
@@ -48,7 +49,8 @@ export default {
 				content: 'NextLaw is a legal platform for practitioners across Africa, enabling them through technology. They provide legal services to businesses and practitioners.',
 				website: 'https://nextlaw.africa/',
 				image: 'nextlaw',
-				completed_at: '2019-07-02'
+				completed_at: '2019-07-02',
+				collaborated: false
 			},
 			{
 				name: 'Dream Builders International',
@@ -56,15 +58,17 @@ export default {
 				content: 'Dream Builders International is a real estate company that provides the best service when it comes to rentage, buying and selling of property online.',
 				website: null,
 				image: 'dreambuildersinter',
-				completed_at: '2019-05-14'
+				completed_at: '2019-05-14',
+				collaborated: false
 			},
 			{
 				name: 'MartAdef Inc.',
 				subtitle: 'Sample Website',
-				content: 'This is one of the very first websites I designed actually with Mobirise.',
+				content: 'This is one of the very first websites I designed actually, using Mobirise.',
 				website: 'http://martadefinc.000webhostapp.com/',
 				image: 'martadef',
-				completed_at: '2018-01-01'
+				completed_at: '2018-01-01',
+				collaborated: false
 			}
 		],
 	},
