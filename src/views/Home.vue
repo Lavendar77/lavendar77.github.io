@@ -5,14 +5,15 @@
 				<h3 class="salute">Hello!</h3>
 				<h1 class="title">I am {{ $store.state.name }}</h1>
 				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
-				<a
-					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
-					class="btn btn-lg btn-primary"
+				<b-btn
+					size="sm"
+					variant="primary"
+					to="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
 					v-b-popover.hover.right="'via Google Drive'" 
 					title="View/Download CV"
 				>
 					Download My CV
-				</a>
+				</b-btn>
 				<div class="mt-5">
 					<codersrank-widget username="lavendar77"></codersrank-widget>
 				</div>
