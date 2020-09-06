@@ -7,7 +7,7 @@
 				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
 				<b-btn
 					size="sm"
-					variant="primary"
+					variant="outline-dark"
 					to="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
 					v-b-popover.hover.right="'via Google Drive'" 
 					title="View/Download CV"
@@ -41,7 +41,7 @@
 
 					<p>
 						Professionally, I engage in maximizing my time and effort to learning and building software solutions through the various platforms of software engineering. I enjoy coding because I see it as an expression of art and critical thinking, from its build to its core.
-						Personally, I am a down-to-earth person with average social skills, which contribute to my livelihood of a quiet life with nature. In just {{ $moment([1997, 0, 31]).fromNow(true) }} of my life, I believe one's passion is most important and mastered through how much one learns about one's self — personality and all. PS, I am an INTJ, with a "Melphleg" temperament.
+						Personally, I am a down-to-earth person with average social skills, which contribute to my livelihood of a quiet life with nature. In just {{ myAge }} of my life, I believe one's passion is most important and mastered through how much one learns about one's self — personality and all. PS, I am an INTJ, with a "Melphleg" temperament.
 					</p>
 				</div>
 			</div>
@@ -160,7 +160,7 @@
 										v-if="project.website"
 										:href="project.website"
 										target="__blank"
-										variant="primary"
+										variant="outline-dark"
 									>
 										Visit Site
 									</b-button>
@@ -224,6 +224,11 @@
 						clickable: true
 					}
 				},
+			}
+		},
+		computed: {
+			myAge() {
+				return this.$moment(new Date('1997-03-31')).fromNow(true)
 			}
 		},
 		methods: {
