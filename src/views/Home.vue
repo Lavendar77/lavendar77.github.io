@@ -6,7 +6,6 @@
 				<h1 class="title">I am {{ $store.state.name }}</h1>
 				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
 				<b-btn
-					size="sm"
 					variant="outline-dark"
 					to="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
 					v-b-popover.hover.right="'via Google Drive'" 
@@ -14,9 +13,6 @@
 				>
 					Download My CV
 				</b-btn>
-				<div class="mt-5">
-					<codersrank-widget username="lavendar77"></codersrank-widget>
-				</div>
 			</b-container>
 		</div>
 
