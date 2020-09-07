@@ -7,9 +7,10 @@
 				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
 				<b-btn
 					variant="dark"
-					to="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
+					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
 					v-b-popover.hover.right="'via Google Drive'" 
 					title="View/Download CV"
+					target="__blank"
 				>
 					Download My CV
 				</b-btn>
