@@ -1,12 +1,16 @@
 <template>
 	<div>
 		<div class="header">
-			<b-container>
-				<h3 class="salute">Hello!</h3>
-				<h1 class="title">I am {{ $store.state.name }}</h1>
+			<b-container class="text-center">
+				<!-- <h3 class="salute">Hello!</h3> -->
+				<h1 class="title">
+					<span class="small" style="font-size: 15px;">I am</span>
+					<br>
+					{{ $store.state.name }}
+				</h1>
 				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
 				<b-btn
-					variant="dark"
+					variant="primary"
 					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
 					v-b-popover.hover.right="'via Google Drive'" 
 					title="View/Download CV"
@@ -30,9 +34,7 @@
 						fluid
 						src="img/adeyinka.jpg"
 						width="150"
-						height="150"
 						:alt="$store.state.name"
-						rounded="top"
 						class="float-right"
 					></b-img-lazy>
 
@@ -108,8 +110,8 @@
 								class="float-left"
 							></b-img-lazy>
 
-							<h5>Nature & Movies</h5>
-							<p>Oh! How I love the solitude of a quiet life with nature... and a box of snacks at hand; keeps my imagination soaring high. I simply enjoy the life of charity and love.</p>
+							<h5>Nature & Life</h5>
+							<p>Oh! How I love the solitude of a quiet life with nature, with a taste of good music and a pack of snacks for my favourite films; keeps my imagination soaring high.</p>
 						</div>
 					</b-row>
 				</div>
@@ -147,10 +149,18 @@
 										</small>
 									</h4>
 									<h6 class="card-subtitle text-muted mb-2">{{ project.subtitle }}</h6>
+									<div class="mt-3 mb-3">
+										<span
+											class="mr-2 badge badge-secondary"
+											v-for="(tool, index) in project.tools"
+											:key="index"
+											:style="`background-color: ${getColor(tool)};`"
+										>
+											{{ tool }}
+										</span>
+									</div>
 									<div class="card-text">
-										<p>
-											{{ project.content }}
-										</p>
+										<p v-html="project.content"></p>
 									</div>
 
 									<b-button
@@ -176,13 +186,13 @@
 				</div>
 				<div class="section-content">
 					<swiper :options="toolsOption">
-						<swiper-slide v-for="(tool, i) in $store.getters['tools/getTools']" :key="i">
-							<b-img-lazy v-bind="myTools" :src="getToolImageUrl(tool)" alt="tool"></b-img-lazy>
+						<swiper-slide v-for="(tool, i) in tools" :key="i">
+							<b-img-lazy v-bind="myTools" :src="getToolImageUrl(tool)" :alt="tool"></b-img-lazy>
 						</swiper-slide>
 						<div
 							class="tools-pagination"
 							slot="pagination"
-							v-if="$store.getters['tools/getTools'].length > toolsOption.slidesPerView"
+							v-if="tools.length > toolsOption.slidesPerView"
 						></div>
 					</swiper>
 					<h5>Others:</h5>
@@ -200,38 +210,51 @@
 </template>
 
 <script>
-	export default {
-		name: 'Home',
-		data () {
-			return {
-				myTools: {
-					center: true,
-					fluidGrow: true,
-					blank: true,
-					blankColor: '#bbb',
-					width: 600,
-					height: 400,
-					class: 'my-5'
-				},
-				toolsOption: {
-					slidesPerView: 4,
-					spaceBetween: 50,
-					pagination: {
-						el: '.tools-pagination',
-						clickable: true
-					}
-				},
-			}
-		},
-		computed: {
-			myAge() {
-				return this.$moment(new Date('1997-03-31')).fromNow(true)
-			}
-		},
-		methods: {
-			getToolImageUrl (name) {
-				return `img/tools/${name}.jpg`
+import { mapGetters } from 'vuex'
+
+export default {
+	name: 'Home',
+	data () {
+		return {
+			myTools: {
+				center: true,
+				fluidGrow: true,
+				blank: true,
+				blankColor: '#bbb',
+				width: 600,
+				height: 400,
+				class: 'my-5'
 			},
+			toolsOption: {
+				slidesPerView: 4,
+				spaceBetween: 50,
+				pagination: {
+					el: '.tools-pagination',
+					clickable: true
+				}
+			},
+		}
+	},
+	computed: {
+		...mapGetters({
+			getTools: 'tools/getTools'
+		}),
+		tools() {
+			return this.getTools.map(tool => tool.name)
 		},
-	}
+		myAge() {
+			return this.$moment(new Date('1997-03-31')).fromNow(true)
+		}
+	},
+	methods: {
+		getToolImageUrl (name) {
+			return `img/tools/${name}.jpg`
+		},
+		getColor(tool) {
+			let color = this.getTools.filter(tl => tl.name == tool)
+
+			return color[0]?.color
+		}
+	},
+}
 </script>
