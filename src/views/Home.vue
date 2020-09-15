@@ -1,5 +1,6 @@
 <template>
 	<div>
+		<div class="text-center bg-danger text-white sticky-top">Hire me, I need a job 🙏</div>
 		<div class="header">
 			<b-container class="text-center">
 				<!-- <h3 class="salute">Hello!</h3> -->
