@@ -12,56 +12,65 @@ export default {
 				subtitle: 'The Africa Content Marketplace',
 				content: 
 					`ACOMART is a platform dedicated to the global equitable promotion and acceleration of Afrocentric content.
-					We are home to the ever Virtual Screening Room for African films and series content buyers can explore
-					the vast catalogue and make informed content acquisition decisions.`,
+					As the <b>Lead Software Engineer</b>, I coordinate all development tasks for the successful
+					deployment of the applications.`,
 				website: 'https://acomart.tv/',
 				image: 'acomart',
 				completed_at: 'ongoing',
-				collaborated: true
+				collaborated: true,
+				tools: ['laravel', 'vuejs', 'aws']
 			},
 			{
 				name: 'Afrostream',
 				subtitle: 'Catch-up with the latest African films',
 				content: 
 					`AFROSTREAM is a subscription Video-on-Demand service for Afrocentric content to be launched globally.
-					You can watch African films online.`,
+					You can watch African films online. Also the <b>Lead Software Engineer</b>, I coordinate all
+					affairs of the development of the applications.`,
 				website: 'https://myafrostream.tv/',
 				image: 'myafrostream',
 				completed_at: 'ongoing',
-				collaborated: true
+				collaborated: true,
+				tools: ['laravel', 'vuejs', 'aws']
 			},
 			{
-				name: 'AETI Online Training Platform',
+				name: 'AETI Online Training',
 				subtitle: 'Online Training Platform',
 				content: 
-					`Our programmes are affordable to bridge the learning gaps, between the academia and what is required
-					by Industry, engineering services and supporting skill acquisition of mid-career professionals.`,
+					`AETI ONLINE TRAINING is an online training platform which features programmes
+					to bridge the learning gaps with engineering services and skills acquisition of mid-career professionals.
+					Acted as the <b>Lead Software Developer</b>.`,
 				website: 'http://onlinetraining.aetinigeria.com/',
 				image: 'aeti',
-				completed_at: '2020-08-18',
-				collaborated: false
+				completed_at: '2020-09-18',
+				collaborated: true,
+				tools: ['laravel', 'vuejs', 'vuetify', 'cPanel']
 			},
 			{
 				name: 'SavyCon',
 				subtitle: 'Hire a vendor for your project',
 				content: 
-					`Savycon.com is a reliable outsourcing platform with ads features tailored to redefining 
-					outsourcing in the best way clients and freelancers appreciate.`,
+					`SAVYCON is a reliable outsourcing platform with ads features tailored to redefining 
+					outsourcing in the best way clients and freelancers appreciate. Following strict instructions,
+					the application was developed and delivered at the estimated time.`,
 				website: 'http://savycon.com/',
 				image: 'savycon',
 				completed_at: '2019-09-24',
-				collaborated: false
+				collaborated: false,
+				tools: ['laravel', 'vuejs', 'vultr']
 			},
 			{
 				name: 'NextLaw Africa',
 				subtitle: 'Enabling Legal Practitioners in Africa through Technology',
 				content: 
-					`NextLaw is a legal platform for practitioners across Africa, enabling them through technology.
-					They provide legal services to businesses and practitioners.`,
+					`NEXTLAW AFRICA is a legal platform for practitioners across Africa, providing legal services to
+					businesses and practitioners. Project is currently onhold, as new developments are ongoing in the
+					background. #Anticipate`,
 				website: 'https://nextlaw.africa/',
 				image: 'nextlaw',
 				completed_at: '2019-07-02',
-				collaborated: true
+				collaborated: true,
+				tools: ['laravel', 'angularjs', 'aws']
 			},
 			// {
 			// 	name: 'Dream Builders International',
