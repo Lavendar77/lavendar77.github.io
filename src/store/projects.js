@@ -10,7 +10,7 @@ export default {
 			{
 				name: 'ACOMART',
 				subtitle: 'The Africa Content Marketplace',
-				content: 
+				content:
 					`ACOMART is a platform dedicated to the global equitable promotion and acceleration of Afrocentric content.
 					As the <b>Lead Software Engineer</b>, I coordinate all development tasks for the successful
 					deployment of the applications.`,
@@ -23,7 +23,7 @@ export default {
 			{
 				name: 'Afrostream',
 				subtitle: 'Catch-up with the latest African films',
-				content: 
+				content:
 					`AFROSTREAM is a subscription Video-on-Demand service for Afrocentric content to be launched globally.
 					You can watch African films online. Also the <b>Lead Software Engineer</b>, I coordinate all
 					affairs of the development of the applications.`,
@@ -34,9 +34,21 @@ export default {
 				tools: ['laravel', 'vuejs', 'aws']
 			},
 			{
+				name: 'Afrocinema',
+				subtitle: 'Access to premium and high quality Afrocentric movies and series.',
+				content:
+					`AFROSTREAM is the Digital Cinema for Afrocentric Movies and Premium Series via
+					your Mobile, PC or Smart TV. `,
+				website: 'https://afrocinema.tv/',
+				image: 'afrocinema',
+				completed_at: 'ongoing',
+				collaborated: true,
+				tools: ['laravel', 'vuejs', 'aws']
+			},
+			{
 				name: 'AETI Online Training',
 				subtitle: 'Online Training Platform',
-				content: 
+				content:
 					`AETI ONLINE TRAINING is an online training platform which features programmes
 					to bridge the learning gaps with engineering services and skills acquisition of mid-career professionals.
 					Acted as the <b>Lead Software Developer</b>.`,
@@ -49,8 +61,8 @@ export default {
 			{
 				name: 'SavyCon',
 				subtitle: 'Hire a vendor for your project',
-				content: 
-					`SAVYCON is a reliable outsourcing platform with ads features tailored to redefining 
+				content:
+					`SAVYCON is a reliable outsourcing platform with ads features tailored to redefining
 					outsourcing in the best way clients and freelancers appreciate. Following strict instructions,
 					the application was developed and delivered at the estimated time.`,
 				website: 'http://savycon.com/',
@@ -62,7 +74,7 @@ export default {
 			{
 				name: 'NextLaw Africa',
 				subtitle: 'Enabling Legal Practitioners in Africa through Technology',
-				content: 
+				content:
 					`NEXTLAW AFRICA is a legal platform for practitioners across Africa, providing legal services to
 					businesses and practitioners. Project is currently onhold, as new developments are ongoing in the
 					background. #Anticipate`,
@@ -75,7 +87,7 @@ export default {
 			// {
 			// 	name: 'Dream Builders International',
 			// 	subtitle: 'Real Estate Platform',
-			// 	content: 
+			// 	content:
 			// 		`Dream Builders International is a real estate company that provides the best service when it
 			// 		comes to rentage, buying and selling of property online.`,
 			// 	website: null,
