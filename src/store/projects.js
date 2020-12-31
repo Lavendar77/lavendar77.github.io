@@ -37,7 +37,7 @@ export default {
 				name: 'Afrocinema',
 				subtitle: 'Access to premium and high quality Afrocentric movies and series.',
 				content:
-					`AFROSTREAM is the Digital Cinema for Afrocentric Movies and Premium Series via
+					`AFROCINEMA is the digital Cinema for Afrocentric Movies and Premium Series via
 					your Mobile, PC or Smart TV. `,
 				website: 'https://afrocinema.tv/',
 				image: 'afrocinema',
