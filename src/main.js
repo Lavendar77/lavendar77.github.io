@@ -11,6 +11,7 @@ import './plugins/vue-page-title'
 import './plugins/vue-awesome-swiper'
 import './plugins/vue-moment'
 import './plugins/vue-material-design-icons'
+import './plugins/vue-snack'
 
 Vue.config.productionTip = false
 
