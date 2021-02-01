@@ -1,7 +1,7 @@
 module.exports = {
 	pwa: {
 		name: 'Adeyinka Adefolurin',
-		themeColor: '#BF0000',
+		themeColor: '#353535',
 		msTileColor: '#FFFFFF'
 	}
 }

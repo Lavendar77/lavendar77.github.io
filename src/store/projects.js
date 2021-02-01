@@ -8,6 +8,20 @@ export default {
 	state: {
 		projects: [
 			{
+				name: 'PAYALAT',
+				subtitle: 'Send & Receive Payments',
+				content:
+					`PAYALAT is a modern payment platform that support African Businesses to Accept Payments
+					offline and online via, Cards, Bank accounts, Mobile Wallets, USSD, MasterPass QR, VISA QR,
+					agent network and other alternative payment methods.`,
+				website: 'https://payalat.com/',
+				image: 'payalat',
+				completed_at: 'ongoing',
+				collaborated: true,
+				tools: ['symfony', 'aws'],
+				is_live: true
+			},
+			{
 				name: 'ACOMART',
 				subtitle: 'The Africa Content Marketplace',
 				content:
@@ -18,7 +32,8 @@ export default {
 				image: 'acomart',
 				completed_at: 'ongoing',
 				collaborated: true,
-				tools: ['laravel', 'vuejs', 'aws']
+				tools: ['laravel', 'vuejs', 'aws'],
+				is_live: true
 			},
 			{
 				name: 'Afrostream',
@@ -31,19 +46,22 @@ export default {
 				image: 'myafrostream',
 				completed_at: 'ongoing',
 				collaborated: true,
-				tools: ['laravel', 'vuejs', 'aws']
+				tools: ['laravel', 'vuejs', 'aws'],
+				is_live: true
 			},
 			{
 				name: 'Afrocinema',
 				subtitle: 'Access to premium and high quality Afrocentric movies and series.',
 				content:
 					`AFROCINEMA is the digital Cinema for Afrocentric Movies and Premium Series via
-					your Mobile, PC or Smart TV. `,
+					your Mobile, PC or Smart TV. Also the <b>Lead Software Engineer</b>, I coordinate all
+					affairs of the development of the applications.`,
 				website: 'https://afrocinema.tv/',
 				image: 'afrocinema',
 				completed_at: 'ongoing',
 				collaborated: true,
-				tools: ['laravel', 'vuejs', 'aws']
+				tools: ['laravel', 'vuejs', 'aws'],
+				is_live: true
 			},
 			{
 				name: 'AETI Online Training',
@@ -56,7 +74,8 @@ export default {
 				image: 'aeti',
 				completed_at: '2020-09-18',
 				collaborated: true,
-				tools: ['laravel', 'vuejs', 'vuetify', 'cPanel']
+				tools: ['laravel', 'vuejs', 'vuetify', 'cPanel'],
+				is_live: true
 			},
 			{
 				name: 'SavyCon',
@@ -69,7 +88,8 @@ export default {
 				image: 'savycon',
 				completed_at: '2019-09-24',
 				collaborated: false,
-				tools: ['laravel', 'vuejs', 'vultr']
+				tools: ['laravel', 'vuejs', 'vultr'],
+				is_live: true
 			},
 			{
 				name: 'NextLaw Africa',
@@ -82,7 +102,8 @@ export default {
 				image: 'nextlaw',
 				completed_at: '2019-07-02',
 				collaborated: true,
-				tools: ['laravel', 'angularjs', 'aws']
+				tools: ['laravel', 'angularjs', 'aws'],
+				is_live: false
 			},
 			// {
 			// 	name: 'Dream Builders International',

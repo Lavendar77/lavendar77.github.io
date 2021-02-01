@@ -1,19 +1,19 @@
 <template>
 	<div>
-		<!-- <div class="text-center bg-danger text-white sticky-top">Hire me, I need a job 🙏</div> -->
+		<!-- <div class="text-center bg-success text-white sticky-top small">Hire me, I need a job 🙏</div> -->
 		<div class="header">
-			<b-container class="text-center">
+			<b-container class="">
 				<!-- <h3 class="salute">Hello!</h3> -->
 				<h1 class="title">
-					<span class="small" style="font-size: 15px;">I am</span>
+					<!-- <span class="small" style="font-size: 15px;">I am</span> -->
 					<br>
 					{{ $store.state.name }}
 				</h1>
-				<h4 class="subtitle mb-5">Full Stack Software Engineer 😇</h4>
+				<h4 class="subtitle mb-5">Full Stack Software Engineer 🐱‍👤</h4>
 				<b-btn
 					variant="primary"
 					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
-					v-b-popover.hover.right="'via Google Drive'" 
+					v-b-popover.hover.right="'via Google Drive'"
 					title="View/Download CV"
 					target="__blank"
 				>
@@ -40,8 +40,13 @@
 					></b-img-lazy>
 
 					<p>
-						Professionally, I engage in maximizing my time and effort to learning and building software solutions through the various platforms of software engineering. I enjoy coding because I see it as an expression of art and critical thinking, from its build to its core.
-						Personally, I am a down-to-earth person with average social skills, which contribute to my livelihood of a quiet life with nature. In just {{ myAge }} of my life, I believe one's passion is most important and mastered through how much one learns about one's self — personality and all. PS, I am an INTJ, with a "Melphleg" temperament.
+						Professionally, I engage in maximizing my time and effort to learning and building software
+						solutions through the various platforms of software engineering. I enjoy coding because I
+						see it as an expression of art and critical thinking, from its build to its core.
+						Personally, I am a down-to-earth person with average social skills, which contribute to
+						my livelihood. In just {{ myAge }} of my life, I believe one's passion is most important
+						and mastered through how much one learns about one's self —  personality and all. PS,
+						I am an INTJ, with a "Melphleg" temperament.
 					</p>
 				</div>
 			</div>
@@ -66,7 +71,9 @@
 
 							<h5>Web Development</h5>
 							<p>
-								Been engaged with the web for most of my years in software development. Laravel is my go-to framework to building efficient web applications; whilst Vue.js is just a "view" of life.
+								Been engaged with the web for most of my years in software development.
+								Laravel is my go-to framework to building efficient web applications; whilst
+								Vue.js is just a "view" of life.
 							</p>
 						</div>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
@@ -81,7 +88,14 @@
 
 							<h5>Mobile App Development</h5>
 							<p>
-								Began my precious journey into becoming a FlutterDev in 2019, and with <a href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg" target="__blank">Net Ninja</a>'s tutorials, I hope to become fully equipped with knowledge and skill by the end of the year.
+								Began my precious journey into becoming a FlutterDev in 2019, and with
+								<a
+									href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
+									target="__blank"
+								>
+									Net Ninja
+								</a>'s tutorials, I hope to become fully equipped with knowledge and skill by
+								the end of the year.
 							</p>
 						</div>
 					</b-row>
@@ -98,7 +112,9 @@
 
 							<h5>Project Management</h5>
 							<p>
-								Managing projects has been one of skills I am proud of over the years. With the highest grade in my undergraduate final year project (89%), I am quite confident.
+								Managing projects has been one of skills I am proud of over the years.
+								With the highest grade in my undergraduate final year project (89%), I am quite
+								confident.
 							</p>
 						</div>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
@@ -112,7 +128,9 @@
 							></b-img-lazy>
 
 							<h5>Nature & Life</h5>
-							<p>Oh! How I love the solitude of a quiet life with nature, with a taste of good music and a pack of snacks for my favourite films; keeps my imagination soaring high.</p>
+							<p>Oh! How I love the solitude of a quiet life with nature, with a taste of good
+								music and a pack of snacks for my favourite films; keeps my imagination soaring
+								high.</p>
 						</div>
 					</b-row>
 				</div>
@@ -169,8 +187,12 @@
 										:href="project.website"
 										target="__blank"
 										variant="outline-dark"
+										:disabled="!project.is_live"
 									>
-										Visit Site
+										{{ project.is_live
+											? 'Visit Site'
+											: 'Site is temporarily down...'
+										}}
 									</b-button>
 								</div>
 							</div>
@@ -183,7 +205,9 @@
 			<div class="section">
 				<div class="section-header">
 					<div class="section-title">My Favourite Tools</div>
-					<div class="section-subtitle">Languages, frameworks and dev. environments I use for best productivity 🔥</div>
+					<div class="section-subtitle">
+						Languages, frameworks and dev. environments I use for best productivity 🔥
+					</div>
 				</div>
 				<div class="section-content">
 					<swiper :options="toolsOption">
@@ -199,7 +223,7 @@
 					<h5>Others:</h5>
 					<p>
 						🏠 Vuex <br>
-						🔲 Sublime Text <br>
+						🔲 Visual Studio Code <br>
 						🎨 Bootstrap, Photoshop <br>
 						🔏 PHP, JavaScript <br>
 						👶🏻 Flutter

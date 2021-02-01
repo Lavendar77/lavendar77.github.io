@@ -16,6 +16,10 @@ export default {
 				color: '#41B883'
 			},
 			{
+				name: 'symfony',
+				color: '#000000'
+			},
+			{
 				name: 'git',
 				color: '#E84D31'
 			},
