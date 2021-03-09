@@ -103,7 +103,7 @@ export default {
 				completed_at: '2019-07-02',
 				collaborated: true,
 				tools: ['laravel', 'angularjs', 'aws'],
-				is_live: false
+				is_live: true
 			},
 			// {
 			// 	name: 'Dream Builders International',
