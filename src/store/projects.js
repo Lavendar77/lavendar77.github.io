@@ -31,7 +31,7 @@ export default {
 					agent network and other alternative payment methods.`,
 				website: 'https://payalat.com/',
 				image: 'payalat',
-				completed_at: 'ongoing',
+				completed_at: '2021-07-31',
 				collaborated: true,
 				tools: ['symfony', 'aws'],
 				is_live: true
@@ -90,7 +90,7 @@ export default {
 				completed_at: '2020-09-18',
 				collaborated: true,
 				tools: ['laravel', 'vuejs', 'vuetify', 'cPanel'],
-				is_live: true
+				is_live: false
 			},
 			{
 				name: 'SavyCon',
@@ -118,19 +118,21 @@ export default {
 				completed_at: '2019-07-02',
 				collaborated: true,
 				tools: ['laravel', 'angularjs', 'aws'],
-				is_live: true
+				is_live: false
 			},
-			// {
-			// 	name: 'Dream Builders International',
-			// 	subtitle: 'Real Estate Platform',
-			// 	content:
-			// 		`Dream Builders International is a real estate company that provides the best service when it
-			// 		comes to rentage, buying and selling of property online.`,
-			// 	website: null,
-			// 	image: 'dreambuildersinter',
-			// 	completed_at: '2019-05-14',
-			// 	collaborated: false
-			// },
+			{
+				name: 'Dream Builders International',
+				subtitle: 'Real Estate Platform',
+				content:
+					`Dream Builders International is a real estate company that provides the best service when it
+					comes to rentage, buying and selling of property online.`,
+				website: null,
+				image: 'dreambuildersinter',
+				completed_at: '2019-05-14',
+				collaborated: false,
+				tools: ['laravel', 'cPanel', 'vuejs'],
+				is_live: false
+			},
 			// {
 			// 	name: 'MartAdef Inc.',
 			// 	subtitle: 'Sample Website',

@@ -9,7 +9,7 @@
 					<br>
 					{{ $store.state.name }}
 				</h1>
-				<h4 class="subtitle mb-5">Full Stack Software Engineer 🐱‍👤</h4>
+				<h4 class="subtitle mb-5">Full Stack Software Engineer</h4>
 				<b-btn
 					variant="primary"
 					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
@@ -26,7 +26,7 @@
 			<div class="section">
 				<div class="section-header">
 					<div class="section-title">About Me</div>
-					<div class="section-subtitle">Local man 😊</div>
+					<div class="section-subtitle">Ade 😊</div>
 				</div>
 
 				<div class="section-content clearfix">
@@ -191,7 +191,7 @@
 									>
 										{{ project.is_live
 											? 'Visit Site'
-											: 'Site is temporarily down...'
+											: 'Site is unavailable...'
 										}}
 									</b-button>
 								</div>
