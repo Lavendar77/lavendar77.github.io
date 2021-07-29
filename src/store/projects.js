@@ -8,6 +8,21 @@ export default {
 	state: {
 		projects: [
 			{
+				name: 'Connect Nigeria',
+				subtitle: 'Find any business-related information easily',
+				content:
+					`Connectnigeria.com makes information easily accessible for everyone.
+					It provides the fastest, easiest and most innovative way for you to find information about
+					businesses, real estate, automobiles, jobs, events, travel, sports, entertainment, health,
+					education, technology and lots more.`,
+				website: 'https://connectnigeria.com/',
+				image: 'connectnigeria',
+				completed_at: 'ongoing',
+				collaborated: true,
+				tools: ['laravel', 'aws'],
+				is_live: false
+			},
+			{
 				name: 'PAYALAT',
 				subtitle: 'Send & Receive Payments',
 				content:
