@@ -90,7 +90,7 @@ export default {
 				completed_at: '2020-09-18',
 				collaborated: true,
 				tools: ['laravel', 'vuejs', 'vuetify', 'cPanel'],
-				is_live: false
+				is_live: true
 			},
 			{
 				name: 'SavyCon',
