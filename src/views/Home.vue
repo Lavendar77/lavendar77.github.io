@@ -40,10 +40,10 @@
 					></b-img-lazy>
 
 					<p>
-						Professionally, I engage in maximizing my time and effort to learning and building software
+						Professionally, I engage in maximizing my time and effort to learn and build software
 						solutions through the various platforms of software engineering. I enjoy coding because I
 						see it as an expression of art and critical thinking, from its build to its core.
-						Personally, I am a down-to-earth person with average social skills, which contribute to
+						I am a down-to-earth person with average social skills, which contribute to
 						my livelihood. In just {{ myAge }} of my life, I believe one's passion is most important
 						and mastered through how much one learns about one's self —  personality and all. PS,
 						I am an INTJ, with a "Melphleg" temperament.
