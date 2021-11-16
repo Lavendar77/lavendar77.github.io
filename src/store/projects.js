@@ -19,8 +19,8 @@ export default {
 				image: 'connectnigeria',
 				completed_at: 'ongoing',
 				collaborated: true,
-				tools: ['laravel', 'aws'],
-				is_live: false
+				tools: ['laravel', 'aws', 'meilisearch'],
+				is_live: true
 			},
 			{
 				name: 'PAYALAT',

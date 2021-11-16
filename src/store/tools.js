@@ -24,16 +24,20 @@ export default {
 				color: '#E84D31'
 			},
 			{
+				name: 'meilisearch',
+				color: '#e5175d'
+			},
+			{
+				name: 'aws',
+				color: '#EF931E'
+			},
+			{
 				name: 'vuetify',
 				color: '#1764BA'
 			},
 			{
 				name: 'flutter',
 				color: '#51BFF0'
-			},
-			{
-				name: 'aws',
-				color: '#EF931E'
 			},
 			{
 				name: 'vultr',
