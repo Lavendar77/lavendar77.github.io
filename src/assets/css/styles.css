@@ -70,6 +70,16 @@
 	list-style-position: inside;
 	padding: 0;
 }
+.duties .btn.btn-secondary {
+	background-color: #dce3ed;
+	border-color: #dce3ed;
+	color: #000000;
+}
+.duties .btn.btn-secondary:hover {
+	background-color: #343a40;
+	border-color: #343a40;
+	color: #dce3ed;
+}
 footer {
 	padding: 20px;
 	background-color: #eee;

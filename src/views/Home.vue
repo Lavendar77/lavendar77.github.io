@@ -201,7 +201,7 @@
 										<div class="duties" v-if="project.duties.length">
 											<b-btn
 												class="shadow-none"
-												variant="outline-dark"
+												variant="secondary"
 												size="sm"
 												v-b-toggle="project.image + 'duties'"
 												block
