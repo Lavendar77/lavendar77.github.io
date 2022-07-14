@@ -16,6 +16,7 @@
 					v-b-popover.hover.right="'via Google Drive'"
 					title="View/Download CV"
 					target="__blank"
+					class="shadow-none"
 				>
 					Download My CV
 				</b-btn>
@@ -34,7 +35,7 @@
 						thumbnail
 						fluid
 						src="img/adeyinka.jpg"
-						width="150"
+						width="200"
 						:alt="$store.state.name"
 						class="float-right"
 					></b-img-lazy>
@@ -76,30 +77,7 @@
 								Vue.js is just a "view" of life.
 							</p>
 						</div>
-						<div class="col-md-6 col-sm-12 my-3 clearfix">
-							<b-img-lazy
-								thumbnail
-								fluid
-								src="https://picsum.photos/id/160/160/160"
-								alt="app"
-								rounded="top"
-								class="float-left"
-							></b-img-lazy>
 
-							<h5>Mobile App Development</h5>
-							<p>
-								Began my precious journey into becoming a FlutterDev in 2019, and with
-								<a
-									href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
-									target="__blank"
-								>
-									Net Ninja
-								</a>'s tutorials, I hope to become fully equipped with knowledge and skill by
-								the end of the year.
-							</p>
-						</div>
-					</b-row>
-					<b-row>
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
 							<b-img-lazy
 								thumbnail
@@ -117,6 +95,31 @@
 								confident.
 							</p>
 						</div>
+					</b-row>
+					<b-row>
+						<div class="col-md-6 col-sm-12 my-3 clearfix">
+							<b-img-lazy
+								thumbnail
+								fluid
+								src="https://picsum.photos/id/160/160/160"
+								alt="app"
+								rounded="top"
+								class="float-left"
+							></b-img-lazy>
+
+							<h5>Mobile App Development</h5>
+							<p>
+								Began my precious journey into becoming a FlutterDev, and with
+								<a
+									href="https://www.youtube.com/channel/UCW5YeuERMmlnqo4oq8vwUpg"
+									target="__blank"
+								>
+									Net Ninja
+								</a>'s tutorials, I hope to become fully equipped with knowledge and skill by
+								the end of the year.
+							</p>
+						</div>
+
 						<div class="col-md-6 col-sm-12 my-3 clearfix">
 							<b-img-lazy
 								thumbnail
@@ -149,26 +152,39 @@
 							v-for="(project, index) in $store.getters['projects/getProjects']"
 							:key="index"
 						>
-							<div class="card mb-2">
+							<div class="card rounded-0 mb-2">
 								<b-img-lazy
 									:src="'img/projects/' + project.image + '.jpg'"
 									:alt="project.name"
-									class="card-img-top"
+									class="card-img-top rounded-0"
 								></b-img-lazy>
 
 								<div class="card-body">
-									<h4 class="card-title clearfix">
-										{{ project.name }}
-										<small
-											v-if="project.collaborated"
-											class="float-right badge badge-success"
-											style="font-size: 10px;"
-										>
-											team player
-										</small>
-									</h4>
-									<h6 class="card-subtitle text-muted mb-2">{{ project.subtitle }}</h6>
-									<div class="mt-3 mb-3">
+									<div class="d-flex justify-content-between">
+										<div>
+											<h4>{{ project.name }}</h4>
+											<h6 class="card-subtitle text-muted mb-2">{{ project.subtitle }}</h6>
+										</div>
+										<div>
+											<b-badge
+												variant="primary"
+												class="float-right"
+											>
+												{{ project.job_title }}
+											</b-badge>
+											<br>
+											<b-badge
+												variant="success"
+												class="float-right"
+												v-if="project.collaborated"
+												style="font-size: 70%;"
+											>
+												team player
+											</b-badge>
+										</div>
+									</div>
+
+									<div class="mt-2 mb-3">
 										<span
 											class="mr-2 badge badge-secondary"
 											v-for="(tool, index) in project.tools"
@@ -178,16 +194,40 @@
 											{{ tool }}
 										</span>
 									</div>
+
 									<div class="card-text">
 										<p v-html="project.content"></p>
-									</div>
 
+										<div class="duties" v-if="project.duties.length">
+											<b-btn
+												class="shadow-none"
+												variant="outline-dark"
+												size="sm"
+												v-b-toggle="project.image + 'duties'"
+												block
+											>
+												<span class="when-open">Close</span><span class="when-closed">Open</span> Responsibilites
+											</b-btn>
+
+											<b-collapse :id="project.image + 'duties'" triggers="click">
+												<ul>
+													<li v-for="(duty, index) in project.duties" :key="index">
+														<span v-html="duty"></span>
+													</li>
+												</ul>
+											</b-collapse>
+										</div>
+									</div>
+								</div>
+
+								<div class="card-footer bg-transparent">
 									<b-button
 										v-if="project.website"
 										:href="project.website"
 										target="__blank"
 										variant="outline-dark"
 										:disabled="!project.is_live"
+										class="shadow-none"
 									>
 										{{ project.is_live
 											? 'Visit Site'
@@ -283,3 +323,10 @@ export default {
 	},
 }
 </script>
+
+<style>
+.collapsed > .when-open,
+.not-collapsed > .when-closed {
+  display: none;
+}
+</style>

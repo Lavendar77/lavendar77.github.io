@@ -32,6 +32,10 @@ export default {
 				color: '#EF931E'
 			},
 			{
+				name: 'digitalocean',
+				color: '#0368ff'
+			},
+			{
 				name: 'vuetify',
 				color: '#1764BA'
 			},

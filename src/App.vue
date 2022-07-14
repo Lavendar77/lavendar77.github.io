@@ -8,11 +8,20 @@
 				<b-button :href="$store.state.linkedin" target="__blank" variant="outline">
 					<linkedin-icon />
 				</b-button>
+				<b-button :href="$store.state.github" target="__blank" variant="outline">
+					<github-icon />
+				</b-button>
+				<b-button :href="$store.state.gitlab" target="__blank" variant="outline">
+					<gitlab-icon />
+				</b-button>
 				<b-button :href="$store.state.twitter" target="__blank" variant="outline">
 					<twitter-icon />
 				</b-button>
 				<b-button :href="'mailto:' + $store.state.email" target="__blank" variant="outline">
 					<mail-icon />
+				</b-button>
+				<b-button :href="`https://wa.me/${myPhone}/?text=Hi.%20I%20would%20like%20to%20hire%20you%20for%20a%20job.`" target="__blank" variant="outline">
+					<whatsapp-icon />
 				</b-button>
 			</b-button-group>
 		</div>
@@ -21,13 +30,13 @@
 		<footer class="text-muted">
 			<div class="text-center">
 				Thanks for the review<br>
-				<b-button
+				<!-- <b-button
 					:href="`https://wa.me/${myPhone}/?text=Hi.%20I%20would%20like%20to%20hire%20you%20for%20a%20job.`"
 					size="lg"
 					variant="outline-default"
 				>
 					Hire me! 🤓
-				</b-button>
+				</b-button> -->
 			</div>
 		</footer>
 	</div>

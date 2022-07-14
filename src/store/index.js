@@ -10,7 +10,9 @@ export default new Vuex.Store({
 		name: 'Adeyinka Adefolurin',
 		phone: '2348135303377',
 		email: 'folurinyinka@gmail.com',
-		linkedin: 'https://www.linkedin.com/in/adeyinka-adefolurin/',
+		linkedin: 'https://linkedin.com/in/adeyinka-adefolurin/',
+		github: 'https://github.com/lavendar77/',
+		gitlab: 'https://gitlab.com/lavendar77/',
 		twitter: 'https://twitter.com/_fykay',
 		skype: 'https://join.skype.com/invite/kYlvM0lNPBwf'
 	},
