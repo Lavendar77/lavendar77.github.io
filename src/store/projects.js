@@ -14,7 +14,7 @@ export default {
 				subtitle: 'Find any business-related information easily',
 				content:
 					`OurSpace is a real-estate platform purposed to elevate hospitality and help leisure seekers find the best apartments they can call home.
-					Land owners (landlords) are list their very best short-stay spaces (apartments).`,
+					Land owners (landlords) can list their very best short-stay spaces (apartments).`,
 				job_title: 'Full Stack Engineer',
 				duties: [
 					'Worked closely with Product and Design teams to understand the client requirements.',
@@ -178,7 +178,7 @@ export default {
 				completed_at: '2019-09-24',
 				collaborated: false,
 				tools: ['laravel', 'vuejs', 'vultr'],
-				is_live: true,
+				is_live: false,
 				is_staging: false
 			},
 			{
