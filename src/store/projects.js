@@ -80,11 +80,11 @@ export default {
 				subtitle: 'The Africa Content Marketplace',
 				content:
 					`ACOMART is a platform dedicated to the global equitable promotion and acceleration of Afrocentric content.
-					As the <b>Lead Software Engineer</b>, I coordinate all development tasks for the successful
+					As the <b>Lead Software Engineer</b>, I coordinated all development tasks for the successful
 					deployment of the applications.`,
 				job_title: 'Lead Software Engineer',
 				duties: [
-					'Lead the development team to build all company applications for Afrocentric Content.',
+					'Led the development team to build all company applications for Afrocentric Content.',
 					'Participated in code reviews, architected, designed, and developed all product features.',
 					'Collaborated in building and maintaining many backend services using Laravel, Masv.io, AWS Lambda, S3, SQS, MediaConvert, SNS, and Video.js.',
 					'Implemented RESTful API for both internal and external client-facing consumption, including integrations with telecommunication and internet service providers in Ghana, Kenya and Nigeria.',
@@ -102,11 +102,11 @@ export default {
 				subtitle: 'Catch-up with the latest African films',
 				content:
 					`AFROSTREAM is a subscription Video-on-Demand service for Afrocentric content to be launched globally.
-					You can watch African films online. Also the <b>Lead Software Engineer</b>, I coordinate all
+					You can watch African films online. Also the <b>Lead Software Engineer</b>, I coordinated all
 					affairs of the development of the applications.`,
 				job_title: 'Lead Software Engineer',
 				duties: [
-					'Lead the development team to build the web and mobile applications.',
+					'Led the development team to build the web and mobile applications.',
 					'Participated in code reviews, architected, designed, and developed all product features.',
 					'Collaborated in building and maintaining many backend services using Laravel, Vuejs, AWS CloudFront, S3, SQS, MediaConvert, SNS, and Video.js.',
 				],
@@ -123,11 +123,11 @@ export default {
 				subtitle: 'Access to premium and high quality Afrocentric movies and series.',
 				content:
 					`AFROCINEMA is the digital Cinema for Afrocentric Movies and Premium Series via
-					your Mobile, PC or Smart TV. Also the <b>Lead Software Engineer</b>, I coordinate all
+					your Mobile, PC or Smart TV. Also the <b>Lead Software Engineer</b>, I coordinated all
 					affairs of the development of the applications.`,
 				job_title: 'Lead Software Engineer',
 				duties: [
-					'Lead the development team to build the web and mobile applications.',
+					'Led the development team to build the web and mobile applications.',
 					'Participated in code reviews, architected, designed, and developed all product features.',
 					'Collaborated in building and maintaining many backend services using Laravel, Vuejs, AWS CloudFront, S3, SQS, MediaConvert, SNS, and Video.js.',
 				],
