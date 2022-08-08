@@ -19,11 +19,11 @@ export default {
 				duties: [
 					'Worked closely with Product and Design teams to understand the client requirements.',
 					`Implemented the backend architecture using Laravel and designed the administrative protal
-					(<a href="https://admintest.ourspace.ng/" target="_blank">https://admintest.ourspace.ng/</a>) using Vuejs.`,
+					(<a href="#" target="_blank">https://admin.ourspace.ng/</a>) using Vuejs.`,
 					'Implemented RESTful API for the frontend web and mobile applications.',
 					'Provisioned and maintained the database using MySQL, and the linux server on DigitalOcean.',
 				],
-				website: 'https://apptest.ourspace.ng/',
+				website: 'https://ourspace.ng/',
 				image: 'ourspace',
 				completed_at: '2022-04-01',
 				collaborated: true,
