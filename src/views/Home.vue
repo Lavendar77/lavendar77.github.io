@@ -35,7 +35,7 @@
 						thumbnail
 						fluid
 						src="img/adeyinka.jpg"
-						width="200"
+						width="160"
 						:alt="$store.state.name"
 						class="float-right"
 					></b-img-lazy>
