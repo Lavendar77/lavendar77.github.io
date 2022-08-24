@@ -18,7 +18,7 @@ export default {
 				job_title: 'Full Stack Engineer',
 				duties: [
 					'Worked closely with Product and Design teams to understand the client requirements.',
-					`Implemented the backend architecture using Laravel and designed the administrative protal
+					`Implemented the backend architecture using Laravel and designed the administrative portal
 					(<a href="#" target="_blank">https://admin.ourspace.ng/</a>) using Vuejs.`,
 					'Implemented RESTful API for the frontend web and mobile applications.',
 					'Provisioned and maintained the database using MySQL, and the linux server on DigitalOcean.',
