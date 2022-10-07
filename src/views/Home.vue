@@ -64,7 +64,7 @@
 							<b-img-lazy
 								thumbnail
 								fluid
-								src="https://picsum.photos/id/0/160/160"
+								src="/img/passion/dev.jpeg"
 								alt="web"
 								rounded="top"
 								class="float-left"
@@ -82,7 +82,7 @@
 							<b-img-lazy
 								thumbnail
 								fluid
-								src="https://picsum.photos/id/119/160/160"
+								src="/img/passion/pm.jpeg"
 								alt="project"
 								rounded="top"
 								class="float-left"
@@ -101,7 +101,7 @@
 							<b-img-lazy
 								thumbnail
 								fluid
-								src="https://picsum.photos/id/160/160/160"
+								src="/img/passion/mobile.jpeg"
 								alt="app"
 								rounded="top"
 								class="float-left"
@@ -124,7 +124,7 @@
 							<b-img-lazy
 								thumbnail
 								fluid
-								src="https://picsum.photos/id/1025/160/160"
+								src="/img/passion/life.jpeg"
 								alt="adventure"
 								rounded="top"
 								class="float-left"
