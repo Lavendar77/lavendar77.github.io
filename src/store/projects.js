@@ -94,7 +94,7 @@ export default {
 				completed_at: '2022-03-31',
 				collaborated: true,
 				tools: ['laravel', 'vuejs', 'aws'],
-				is_live: true,
+				is_live: false,
 				is_staging: false
 			},
 			{
