@@ -3,12 +3,50 @@ import Vuex from 'vuex'
 
 Vue.use(Vuex)
 
-let ongoingDate = new Date().getUTCFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
+// let ongoingDate = new Date().getUTCFullYear() + '-' + new Date().getMonth() + '-' + new Date().getDate();
 
 export default {
 	namespaced: true,
 	state: {
 		projects: [
+			{
+				name: 'KSBTech',
+				subtitle: 'Buy and sell giftcards and crypto at the best rates.',
+				content:
+					`KSBTECH takes pride in being Nigeria's most trusted platform for trading cryptocurrencies and digital assets.`,
+				job_title: 'Backend Engineer',
+				duties: [
+					'Worked closely with Product and Design teams to understand the client requirements.',
+					'Implemented RESTful API for the frontend web and mobile applications.',
+					'Provisioned and maintained the database using MySQL, and the linux server on DigitalOcean.',
+				],
+				website: 'https://ksbtech.com.ng/',
+				image: 'ksbtech',
+				completed_at: '2023-05-01',
+				collaborated: true,
+				tools: ['laravel', 'digitalocean'],
+				is_live: true,
+				is_staging: false
+			},
+			{
+				name: 'Hypetag',
+				subtitle: 'Shopping that delivers where and when it\'s needed',
+				content:
+					`Hypetag provides a secure, easy-to-use technology that puts your shopping experience in your hands`,
+				job_title: 'Backend Engineer',
+				duties: [
+					'Worked closely with Product and Design teams to understand the client requirements.',
+					'Implemented RESTful API for the frontend web and mobile applications.',
+					'Provisioned and maintained the database using MySQL, and the linux server on DigitalOcean.',
+				],
+				website: 'https://hypetag.com/',
+				image: 'hypetag',
+				completed_at: '2023-05-23',
+				collaborated: true,
+				tools: ['laravel', 'digitalocean'],
+				is_live: true,
+				is_staging: false
+			},
 			{
 				name: 'OurSpace',
 				subtitle: 'Find any business-related information easily',
@@ -48,7 +86,7 @@ export default {
 				],
 				website: 'https://connectnigeria.com/',
 				image: 'connectnigeria',
-				completed_at: ongoingDate,
+				completed_at: '2022-09-30',
 				collaborated: true,
 				tools: ['laravel', 'aws', 'meilisearch'],
 				is_live: true,
