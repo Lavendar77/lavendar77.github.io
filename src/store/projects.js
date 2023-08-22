@@ -86,17 +86,15 @@ export default {
 				completed_at: '2022-04-01',
 				collaborated: true,
 				tools: ['laravel', 'digitalocean', 'vuejs'],
-				is_live: true,
+				is_live: false,
 				is_staging: true
 			},
 			{
 				name: 'Connect Nigeria',
 				subtitle: 'Find any business-related information easily',
 				content:
-					`Connectnigeria.com makes information easily accessible for everyone.
-					It provides the fastest, easiest and most innovative way for you to find information about
-					businesses, real estate, automobiles, jobs, events, travel, sports, entertainment, health,
-					education, technology and lots more.`,
+					`Connect Nigeria offers swift and simple access to a wide range of information about businesses,
+					real estate, automobiles, jobs, events, travel, sports, entertainment, health, education, technology, and much more.`,
 				job_title: 'Backend Engineer',
 				duties: [
 					`Collaborated in building and maintaining many backend services using Laravel, high-performant
@@ -236,7 +234,7 @@ export default {
 				completed_at: '2019-09-24',
 				collaborated: false,
 				tools: ['laravel', 'vuejs', 'vultr'],
-				is_live: false,
+				is_live: true,
 				is_staging: false
 			},
 			{
@@ -300,6 +298,26 @@ export default {
 
 				return date2 - date1;
 			})
+		},
+		getLiveProjects (state) {
+			return state.projects
+				.filter((project) => project.is_live)
+				.sort((a, b) => {
+					let date1 = new Date(a.completed_at);
+					let date2 = new Date(b.completed_at);
+
+					return date2 - date1;
+				});
+		},
+		getStaleProjects (state) {
+			return state.projects
+				.filter((project) => !project.is_live)
+				.sort((a, b) => {
+					let date1 = new Date(a.completed_at);
+					let date2 = new Date(b.completed_at);
+
+					return date2 - date1;
+				});
 		}
 	},
 	actions: {}
