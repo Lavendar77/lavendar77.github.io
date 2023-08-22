@@ -10,6 +10,26 @@ export default {
 	state: {
 		projects: [
 			{
+				name: 'Gerocare',
+				subtitle: 'Give your Parents the gift of a Healthy, Long Life.',
+				content:
+					`Gerocare provides regular physician home visits for the elderly to prevent deterioration in their health condition, maintain a healthy state and improve quality of life.`,
+				job_title: 'Full Stack Developer',
+				duties: [
+					'Migrated all company applications to GCP for a single server infrastructure which lead to a 35% increase in service delivery.',
+					'Managed the tech team in maintaining existing systems and building new products for the organization.',
+					'Implemented RESTful API for both internal and external client-facing consumption, including collaborations with the Lagos State Government to build efficient systems for the health sector of the state.',
+					'Participated in code reviews, architecting, designing, and developing the products.',
+				],
+				website: 'https://gerocare.org/',
+				image: 'gerocare',
+				completed_at: '2023-04-30',
+				collaborated: true,
+				tools: ['laravel', 'vuejs', 'GCP'],
+				is_live: true,
+				is_staging: false
+			},
+			{
 				name: 'KSBTech',
 				subtitle: 'Buy and sell giftcards and crypto at the best rates.',
 				content:

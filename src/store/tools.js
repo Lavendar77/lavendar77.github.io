@@ -12,24 +12,20 @@ export default {
 				color: '#FF3326'
 			},
 			{
+				name: 'aws',
+				color: '#EF931E'
+			},
+			{
 				name: 'vuejs',
 				color: '#41B883'
 			},
 			{
-				name: 'symfony',
-				color: '#000000'
+				name: 'GCP',
+				color: '#4284f3'
 			},
 			{
 				name: 'git',
 				color: '#E84D31'
-			},
-			{
-				name: 'meilisearch',
-				color: '#e5175d'
-			},
-			{
-				name: 'aws',
-				color: '#EF931E'
 			},
 			{
 				name: 'digitalocean',
@@ -38,6 +34,14 @@ export default {
 			{
 				name: 'vuetify',
 				color: '#1764BA'
+			},
+			{
+				name: 'meilisearch',
+				color: '#e5175d'
+			},
+			{
+				name: 'symfony',
+				color: '#000000'
 			},
 			{
 				name: 'flutter',
