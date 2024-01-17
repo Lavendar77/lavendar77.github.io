@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import 'vue-material-design-icons/styles.css'
 
+import GoogleDrive from 'vue-material-design-icons/GoogleDrive.vue';
 import Linkedin from 'vue-material-design-icons/Linkedin.vue';
 import Github from 'vue-material-design-icons/Github.vue';
 import Gitlab from 'vue-material-design-icons/Gitlab.vue';
@@ -8,6 +9,7 @@ import Whatsapp from 'vue-material-design-icons/Whatsapp.vue';
 import Twitter from 'vue-material-design-icons/Twitter.vue';
 import Mail from 'vue-material-design-icons/Mail.vue';
 
+Vue.component('google-drive-icon', GoogleDrive);
 Vue.component('linkedin-icon', Linkedin);
 Vue.component('twitter-icon', Twitter);
 Vue.component('github-icon', Github);

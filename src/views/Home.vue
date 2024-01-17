@@ -1,25 +1,40 @@
 <template>
 	<div>
-		<!-- <div class="text-center bg-success text-white sticky-top small">Hire me, I need a job 🙏</div> -->
+		<!-- <div class="text-center bg-warning text-white sticky-top small">Hire me, I need a job 🙏</div> -->
 		<div class="header">
 			<b-container class="">
-				<!-- <h3 class="salute">Hello!</h3> -->
+				<!-- <h3 class="salute">Hello 👋</h3> -->
 				<h1 class="title">
 					<!-- <span class="small" style="font-size: 15px;">I am</span> -->
 					<br>
 					{{ $store.state.name }}
 				</h1>
 				<h4 class="subtitle mb-5">Full Stack Software Engineer</h4>
-				<b-btn
+				<b-dropdown
+					text="Explore My Portfolio"
+					split-variant="outline-primary"
 					variant="primary"
-					href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing"
-					v-b-popover.hover.right="'via Google Drive'"
-					title="View/Download CV"
-					target="__blank"
-					class="shadow-none"
+					class="shadow-none outline-none"
 				>
-					Download My CV
-				</b-btn>
+					<b-dropdown-item href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing" target="_blank">
+						<google-drive-icon /> Google Drive
+					</b-dropdown-item>
+					<b-dropdown-item :href="$store.state.linkedin" target="_blank">
+						<linkedin-icon /> LinkedIn
+					</b-dropdown-item>
+					<b-dropdown-item :href="$store.state.github" target="_blank">
+						<github-icon /> GitHub
+					</b-dropdown-item>
+					<b-dropdown-item :href="$store.state.twitter" target="_blank">
+						&#x1D54F; <small>(Formerly Twitter)</small>
+					</b-dropdown-item>
+					<b-dropdown-item :href="'mailto:' + $store.state.email" target="_blank">
+						<mail-icon /> Email
+					</b-dropdown-item>
+					<b-dropdown-item :href="'https://wa.me/' + $store.state.phone + '/?text=Hi.'" target="_blank">
+						<whatsapp-icon /> WhatsApp
+					</b-dropdown-item>
+				</b-dropdown>
 			</b-container>
 		</div>
 
