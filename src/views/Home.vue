@@ -149,7 +149,7 @@
 					<b-row>
 						<div
 							class="col-md-6 col-sm-12 my-3"
-							v-for="(project, index) in $store.getters['projects/getLiveProjects']"
+							v-for="(project, index) in $store.getters['projects/getProjects']"
 							:key="index"
 						>
 							<div class="card shadow-sm">
@@ -220,103 +220,19 @@
 									</div>
 								</div>
 
-								<div class="card-footer bg-transparent">
+								<div class="card-footer bg-transparent" v-if="project.is_live">
 									<b-button
-										v-if="project.website"
 										:href="project.website"
 										target="__blank"
 										variant="outline-dark"
-										:disabled="!project.is_live"
 										class="shadow-none"
 									>
-										{{ project.is_live
-											? 'Visit Site'
-											: 'Site is unavailable...'
-										}}
+										Visit Site
 									</b-button>
 								</div>
 							</div>
 						</div>
 					</b-row>
-
-					<b-list-group>
-						<b-list-group-item
-							class="flex-column align-items-start"
-							v-for="(project, index) in $store.getters['projects/getStaleProjects']"
-							:key="index"
-						>
-							<div class="d-flex">
-								<b-img-lazy
-									:src="'img/projects/' + project.image + '.jpg'"
-									:alt="project.name"
-									class="rounded-0 w-25 mr-2 h-100"
-								></b-img-lazy>
-								<div>
-									<div class="d-md-flex justify-content-between">
-										<a
-											:href="project.website ? project.website : '#'"
-											class="mb-0 font-weight-bold text-reset"
-											target="_blank"
-										>
-											{{ project.name }}
-										</a>
-										<div>
-											<b-badge
-												variant="primary"
-												class=""
-											>
-												{{ project.job_title }}
-											</b-badge>
-											<b-badge
-												variant="success"
-												class="ml-2"
-												v-if="project.collaborated"
-												style="font-size: 70%;"
-											>
-												team player
-											</b-badge>
-										</div>
-									</div>
-									<p class="small mb-0">{{ project.subtitle }}</p>
-
-									<div class="mt-2 mb-3">
-										<span
-											class="mr-2 badge badge-secondary"
-											v-for="(tool, index) in project.tools"
-											:key="index"
-											:style="`background-color: ${getColor(tool)};`"
-										>
-											{{ tool }}
-										</span>
-									</div>
-
-									<div class="small">
-										<p v-html="project.content"></p>
-
-										<div class="duties" v-if="project.duties.length">
-											<b-btn
-												class="shadow-none"
-												variant="secondary"
-												size="sm"
-												v-b-toggle="project.image + 'duties'"
-												block
-											>
-												<span class="when-open">Close</span><span class="when-closed">Open</span> Responsibilites
-											</b-btn>
-
-											<b-collapse :id="project.image + 'duties'" triggers="click">
-												<ul>
-													<li v-for="(duty, index) in project.duties" :key="index">
-														<span v-html="duty"></span>
-													</li>
-												</ul>
-											</b-collapse>
-										</div>
-									</div>
-								</div>
-							</div>
-						</b-list-group-item>
-					</b-list-group>
 				</div>
 			</div>
 
