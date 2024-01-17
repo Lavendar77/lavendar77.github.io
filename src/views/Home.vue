@@ -341,11 +341,11 @@
 					</swiper>
 					<h5>Others:</h5>
 					<p>
-						🏠 Vuex <br>
-						🔲 Visual Studio Code <br>
-						🎨 Bootstrap, Photoshop <br>
+						🏠 Vuex, PestPHP <br>
+						🎨 Tailwind, Bootstrap, Photoshop <br>
 						🔏 PHP, JavaScript <br>
-						👶🏻 Flutter
+						👶🏻 GO, Python, Flutter <br>
+						🔲 Visual Studio Code <br>
 					</p>
 				</div>
 			</div>
