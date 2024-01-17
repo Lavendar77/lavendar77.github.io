@@ -293,6 +293,12 @@ export default {
 	getters: {
 		getProjects (state) {
 			return state.projects.sort((a, b) => {
+				// First, compare is_live (boolean)
+				if (b.is_live - a.is_live !== 0) {
+					return b.is_live - a.is_live;
+				}
+
+				// If is_live is the same, then compare completed_at date
 				let date1 = new Date(a.completed_at);
 				let date2 = new Date(b.completed_at);
 
