@@ -128,7 +128,7 @@ export default {
 				completed_at: '2021-07-31',
 				collaborated: true,
 				tools: ['symfony', 'aws'],
-				is_live: true,
+				is_live: false,
 				is_staging: false
 			},
 			{
