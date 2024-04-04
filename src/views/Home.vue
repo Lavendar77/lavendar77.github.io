@@ -17,7 +17,7 @@
 					class="shadow-none outline-none"
 				>
 					<b-dropdown-item href="https://drive.google.com/file/d/1iVlP4fNT0XVv_aC8VDaSUeMHqQe9SL0k/view?usp=sharing" target="_blank">
-						<google-drive-icon /> Google Drive
+						<google-drive-icon /> Résumé
 					</b-dropdown-item>
 					<b-dropdown-item :href="$store.state.linkedin" target="_blank">
 						<linkedin-icon /> LinkedIn
