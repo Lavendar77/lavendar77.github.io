@@ -1,22 +1,14 @@
-import '@babel/polyfill'
-import 'mutationobserver-shim'
-import Vue from 'vue'
-import './plugins/bootstrap-vue'
+import './assets/main.css'
+
+import { createApp } from 'vue'
+import { createPinia } from 'pinia'
+
 import App from './App.vue'
-import './registerServiceWorker'
 import router from './router'
-import store from './store'
-import './assets/css/styles.css'
-import './plugins/vue-page-title'
-import './plugins/vue-awesome-swiper'
-import './plugins/vue-moment'
-import './plugins/vue-material-design-icons'
-import './plugins/vue-snack'
 
-Vue.config.productionTip = false
+const app = createApp(App)
 
-new Vue({
-	router,
-	store,
-	render: h => h(App)
-}).$mount('#app')
+app.use(createPinia())
+app.use(router)
+
+app.mount('#app')
