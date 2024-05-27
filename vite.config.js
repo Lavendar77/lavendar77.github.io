@@ -14,5 +14,10 @@ export default defineConfig({
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url))
     }
-  }
+  },
+  pwa: {
+		name: 'Lavendar77',
+		themeColor: '#353535',
+		msTileColor: '#FFFFFF'
+	}
 })

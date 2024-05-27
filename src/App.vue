@@ -2,8 +2,60 @@
   import SvgIcon from '@jamescoyle/vue-icon';
   import { mdiLinkedin, mdiGithub, mdiGitlab, mdiMail, mdiWhatsapp } from '@mdi/js';
   import { useProfileStore } from './stores/profile';
+  import { onBeforeUnmount, onMounted, ref, watch } from 'vue';
 
   const profile = useProfileStore();
+
+  const swRefreshing = ref(false);
+  const swRegistration = ref(null);
+  const swUpdateExists = ref(false);
+
+  const swUpdateAvailable = (event) => {
+    swRegistration.value = event.detail;
+    swUpdateExists.value = true;
+  };
+
+  const swRefreshApp = () => {
+    swUpdateExists.value = false;
+
+    // Make sure we only send a 'skip waiting' message if the SW is waiting
+    if (!swRegistration.value || !swRegistration.value.waiting) {
+      return;
+    }
+
+    // send message to SW to skip the waiting and activate the new SW
+    swRegistration.value.waiting.postMessage({ type: 'SKIP_WAITING' });
+  };
+
+  watch(swUpdateExists, async (value) => {
+    if (value) {
+      alert('New app version detected! Install now!')
+    }
+  })
+
+  onMounted(() => {
+    // Listen for our custom event from the SW registration
+    document.addEventListener('swUpdated', swUpdateAvailable, {
+      once: true,
+    });
+
+    // Prevent multiple refreshes
+    navigator.serviceWorker.addEventListener('controllerchange', () => {
+      if (swRefreshing.value) {
+        return;
+      }
+
+      swRefreshing.value = true;
+
+      // Here the actual reload of the page occurs
+      window.location.reload();
+    });
+  });
+
+  onBeforeUnmount(() => {
+    // Clean up the event listener
+    document.removeEventListener('swUpdated', swUpdateAvailable);
+  });
 </script>
 
 <template>
