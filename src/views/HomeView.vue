@@ -105,7 +105,7 @@ function getColor(tool) {
 						solutions through the various platforms of software engineering. I enjoy coding because I
 						see it as an expression of art and critical thinking, from its build to its core.
 						I am a down-to-earth person with average social skills, which contribute to
-						my livelihood. In just {{ age }} of my life, I believe one's passion is most important
+						my livelihood. In just {{ age }} years of my life, I believe one's passion is most important
 						and mastered through how much one learns about one's self — personality and all. PS,
 						I am an INTJ, with a "Melphleg" temperament.
 					</p>
@@ -212,12 +212,7 @@ function getColor(tool) {
 									</div>
 								</div>
 
-								<div class="d-flex justify-content-between card-footer bg-transparent"
-									v-if="project.is_live">
-									<a :href="project.website" target="__blank"
-										class="btn btn-sm btn-outline-dark shadow-none">
-										Visit Site
-									</a>
+								<div class="d-flex justify-content-between card-footer bg-transparent">
 									<div class="duties dropend d-grid" v-if="project.duties.length">
 										<button class="btn btn-sm btn-outline-dark border-0 dropdown-toggle shadow-none"
 											data-bs-toggle="collapse" :href="`#project${index}_duties`" role="button"
@@ -225,6 +220,10 @@ function getColor(tool) {
 											Duties
 										</button>
 									</div>
+									<a :href="project.website" v-if="project.is_live" target="__blank"
+										class="btn btn-sm btn-outline-dark shadow-none">
+										Visit Site
+									</a>
 								</div>
 							</div>
 						</div>
