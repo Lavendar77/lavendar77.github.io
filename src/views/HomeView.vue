@@ -112,13 +112,7 @@ function getColor(tool) {
           />
 
           <p>
-            Professionally, I engage in maximizing my time and effort to learn and build software
-            solutions through the various platforms of software engineering. I enjoy coding because
-            I see it as an expression of art and critical thinking, from its build to its core. I am
-            a down-to-earth person with average social skills, which contribute to my livelihood. In
-            just {{ age }} years of my life, I believe one's passion is most important and mastered
-            through how much one learns about one's self — personality and all. PS, I am an INTJ,
-            with a "Melphleg" temperament.
+            I am passionate about building software solutions and continually learning within the ever-evolving field of software engineering. Coding to me is both an art form and a mental exercise, where creativity meets critical thinking. I'm a grounded individual who values authenticity and has a knack for solving problems. At {{ age }}, I've come to believe that true mastery comes from a deep understanding of oneself, both in terms of skills and personality. I am a great conversationalist, an optimist, curious, and goal-oriented, which helps me connect with others and stay focused on achieving my objectives. By the way, I identify as an INTJ with a "Melphleg" temperament, which helps me approach challenges with a unique perspective.
           </p>
         </div>
       </div>
