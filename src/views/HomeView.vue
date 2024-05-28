@@ -112,7 +112,7 @@ function getColor(tool) {
           />
 
           <p>
-            I am passionate about building software solutions and continually learning within the ever-evolving field of software engineering. Coding to me is both an art form and a mental exercise, where creativity meets critical thinking. I'm a grounded individual who values authenticity and has a knack for solving problems. At {{ age }}, I've come to believe that true mastery comes from a deep understanding of oneself, both in terms of skills and personality. I am a great conversationalist, an optimist, curious, and goal-oriented, which helps me connect with others and stay focused on achieving my objectives. By the way, I identify as an INTJ with a "Melphleg" temperament, which helps me approach challenges with a unique perspective.
+            I am passionate about building software solutions and continually learning within the ever-evolving field of software engineering. Coding to me is both an art form and a mental exercise, where creativity meets critical thinking. I'm a grounded individual who values authenticity and has a knack for solving problems. At {{ age }}, I've come to believe that true mastery comes from a deep understanding of oneself, both in terms of skills and personality. I bring a mix of optimism, curiosity, and goal-oriented focus to my work and passion, and I enjoy engaging in meaningful conversations. Additionally, I have a great love for movies, which provides me with endless inspiration on storytelling and creativity. By the way, I identify as an INTJ with a Melancholy-Phlegmatic temperament, which helps me approach challenges with a unique perspective.
           </p>
         </div>
       </div>
