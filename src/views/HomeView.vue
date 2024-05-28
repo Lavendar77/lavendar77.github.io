@@ -46,7 +46,7 @@ function getColor(tool) {
           <br />
           {{ profileStore.name }}
         </h1>
-        <h4 class="subtitle mb-5">Full Stack Software Engineer</h4>
+        <h2 class="subtitle mb-5">Full Stack Software Engineer</h2>
         <div class="dropdown">
           <button
             class="btn btn-outline-primary shadow-none outline-none dropdown-toggle"
@@ -126,39 +126,33 @@ function getColor(tool) {
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/dev.jpeg" class="card-img-top" alt="web" />
+                <img src="/img/passion/dev.jpeg" class="card-img-top" alt="web" height="300px" />
                 <div class="card-body">
                   <h5 class="card-title">Web Development</h5>
                   <p class="card-text">
-                    Been engaged with the web for most of my years in software development. Laravel
-                    is my go-to framework to building efficient web applications; whilst Vue.js is
-                    just a "view" of life.
+                    I've spent most of my software development career working on web applications. Laravel is my go-to framework for building efficient web solutions, and Vue.js offers a refreshing approach to crafting dynamic user interfaces.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/pm.jpeg" class="card-img-top" alt="project management" />
+                <img src="/img/passion/pm.jpeg" class="card-img-top" alt="project management" height="300px" />
                 <div class="card-body">
                   <h5 class="card-title">Project Management</h5>
                   <p class="card-text">
-                    Managing projects has been one of skills I am proud of over the years. With the
-                    highest grade in my undergraduate final year project (89%), I am quite
-                    confident.
+                    Managing projects is a skill I take great pride in. I achieved the highest grade (89%) in my undergraduate final year project, which boosted my confidence in my project management abilities.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/life.jpeg" class="card-img-top" alt="life" />
+                <img src="/img/passion/life.jpeg" class="card-img-top" alt="life" height="300px" />
                 <div class="card-body">
                   <h5 class="card-title">Nature &amp; Life</h5>
                   <p class="card-text">
-                    Oh! How I love the solitude of a quiet life with nature, with a taste of good
-                    music and a pack of snacks for my favourite films; keeps my imagination soaring
-                    high.
+                    I cherish the tranquility of a quiet life surrounded by nature, accompanied by soothing music and a pack of snacks while indulging in my favorite films. This combination fuels my imagination and keeps my spirits high.
                   </p>
                 </div>
               </div>
@@ -175,7 +169,7 @@ function getColor(tool) {
         <div class="section-content">
           <div class="row row-cols-1 row-cols-md-2 g-4">
             <div class="col" v-for="(project, index) in projectStore.getProjects" :key="index">
-              <div class="card shadow-sm">
+              <div class="card shadow">
                 <img
                   :src="`img/projects/${project.image}.jpg`"
                   :alt="project.name"
@@ -186,8 +180,8 @@ function getColor(tool) {
                 <div class="card-body">
                   <div class="d-md-flex justify-content-between">
                     <div>
-                      <h4>{{ project.name }}</h4>
-                      <h6 class="card-subtitle text-muted mb-2">{{ project.subtitle }}</h6>
+                      <h4 class="mb-0">{{ project.name }}</h4>
+                      <p class="card-subtitle section-subtitle m-0">{{ project.subtitle }}</p>
                     </div>
                     <div>
                       <span class="badge bg-primary float-end">
