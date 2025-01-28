@@ -283,8 +283,8 @@ export const useProjectStore = defineStore('projects', {
         }
 
         // If is_live is the same, then compare completed_at date
-        let date1 = new Date(a.completed_at)
-        let date2 = new Date(b.completed_at)
+        const date1 = new Date(a.completed_at)
+        const date2 = new Date(b.completed_at)
 
         return date2 - date1
       })
@@ -293,8 +293,8 @@ export const useProjectStore = defineStore('projects', {
       return this.projects
         .filter((project) => project.is_live)
         .sort((a, b) => {
-          let date1 = new Date(a.completed_at)
-          let date2 = new Date(b.completed_at)
+          const date1 = new Date(a.completed_at)
+          const date2 = new Date(b.completed_at)
 
           return date2 - date1
         })
@@ -303,8 +303,8 @@ export const useProjectStore = defineStore('projects', {
       return this.projects
         .filter((project) => !project.is_live)
         .sort((a, b) => {
-          let date1 = new Date(a.completed_at)
-          let date2 = new Date(b.completed_at)
+          const date1 = new Date(a.completed_at)
+          const date2 = new Date(b.completed_at)
 
           return date2 - date1
         })

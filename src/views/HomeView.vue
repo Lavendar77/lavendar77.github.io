@@ -43,10 +43,12 @@ function getColor(tool) {
         <!-- <h3 class="salute">Hello 👋</h3> -->
         <h1 class="title">
           <!-- <span class="small" style="font-size: 15px;">I am</span> -->
-          <br />
+          <br>
           {{ profileStore.name }}
         </h1>
-        <h2 class="subtitle mb-5">Full Stack Software Engineer</h2>
+        <h2 class="subtitle mb-5">
+          Full Stack Software Engineer
+        </h2>
         <div class="dropdown">
           <button
             class="btn btn-outline-primary shadow-none outline-none dropdown-toggle"
@@ -58,28 +60,60 @@ function getColor(tool) {
           </button>
           <ul class="dropdown-menu">
             <li>
-              <a class="dropdown-item" :href="profileStore.drive" target="_blank">
-                <svg-icon type="mdi" :path="mdiGoogleDrive"></svg-icon> Résumé
+              <a
+                class="dropdown-item"
+                :href="profileStore.drive"
+                target="_blank"
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="mdiGoogleDrive"
+                /> Résumé
               </a>
             </li>
             <li>
-              <a class="dropdown-item" :href="profileStore.linkedin" target="_blank">
-                <svg-icon type="mdi" :path="mdiLinkedin"></svg-icon> LinkedIn
+              <a
+                class="dropdown-item"
+                :href="profileStore.linkedin"
+                target="_blank"
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="mdiLinkedin"
+                /> LinkedIn
               </a>
             </li>
             <li>
-              <a class="dropdown-item" :href="profileStore.github" target="_blank">
-                <svg-icon type="mdi" :path="mdiGithub"></svg-icon> GitHub
+              <a
+                class="dropdown-item"
+                :href="profileStore.github"
+                target="_blank"
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="mdiGithub"
+                /> GitHub
               </a>
             </li>
             <li>
-              <a class="dropdown-item" :href="profileStore.twitter" target="_blank">
+              <a
+                class="dropdown-item"
+                :href="profileStore.twitter"
+                target="_blank"
+              >
                 &#x1D54F; <small>(Formerly Twitter)</small>
               </a>
             </li>
             <li>
-              <a class="dropdown-item" :href="`mailto:${profileStore.email}`" target="_blank">
-                <svg-icon type="mdi" :path="mdiMail"></svg-icon> Email
+              <a
+                class="dropdown-item"
+                :href="`mailto:${profileStore.email}`"
+                target="_blank"
+              >
+                <svg-icon
+                  type="mdi"
+                  :path="mdiMail"
+                /> Email
               </a>
             </li>
             <li>
@@ -88,7 +122,10 @@ function getColor(tool) {
                 :href="`https://wa.me/${profileStore.phone}/?text=Hi.`"
                 target="_blank"
               >
-                <svg-icon type="mdi" :path="mdiWhatsapp"></svg-icon> WhatsApp
+                <svg-icon
+                  type="mdi"
+                  :path="mdiWhatsapp"
+                /> WhatsApp
               </a>
             </li>
           </ul>
@@ -99,8 +136,12 @@ function getColor(tool) {
     <div class="container">
       <div class="section">
         <div class="section-header">
-          <div class="section-title">About Me</div>
-          <div class="section-subtitle">Ade 😊</div>
+          <div class="section-title">
+            About Me
+          </div>
+          <div class="section-subtitle">
+            Ade 😊
+          </div>
         </div>
 
         <div class="section-content clearfix">
@@ -109,50 +150,90 @@ function getColor(tool) {
             width="160"
             :alt="profileStore.name"
             class="img-fluid img-thumbnail ms-3 float-end"
-          />
+          >
 
           <p>
-            I am passionate about building software solutions and continually learning within the ever-evolving field of software engineering. Coding to me is both an art form and a mental exercise, where creativity meets critical thinking. I'm a grounded individual who values authenticity and has a knack for solving problems. At {{ age }}, I've come to believe that true mastery comes from a deep understanding of oneself, both in terms of skills and personality. I bring a mix of optimism, curiosity, and goal-oriented focus to my work and passion, and I enjoy engaging in meaningful conversations. Additionally, I have a great love for movies, which provides me with endless inspiration on storytelling and creativity. By the way, I identify as an INTJ with a Melancholy-Phlegmatic temperament, which helps me approach challenges with a unique perspective.
+            I am passionate about building software solutions and continually learning within the
+            ever-evolving field of software engineering. Coding to me is both an art form and a
+            mental exercise, where creativity meets critical thinking. I'm a grounded individual who
+            values authenticity and has a knack for solving problems. At {{ age }}, I've come to
+            believe that true mastery comes from a deep understanding of oneself, both in terms of
+            skills and personality. I bring a mix of optimism, curiosity, and goal-oriented focus to
+            my work and passion, and I enjoy engaging in meaningful conversations. Additionally, I
+            have a great love for movies, which provides me with endless inspiration on storytelling
+            and creativity. By the way, I identify as an INTJ with a Melancholy-Phlegmatic
+            temperament, which helps me approach challenges with a unique perspective.
           </p>
         </div>
       </div>
 
       <div class="section">
         <div class="section-header">
-          <div class="section-title">My Passion</div>
-          <div class="section-subtitle">What I love to do 👨🏻‍💻</div>
+          <div class="section-title">
+            My Passion
+          </div>
+          <div class="section-subtitle">
+            What I love to do 👨🏻‍💻
+          </div>
         </div>
         <div class="section-content">
           <div class="row row-cols-1 row-cols-md-3 g-4">
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/dev.jpeg" class="card-img-top" alt="web" height="300px" />
+                <img
+                  src="/img/passion/dev.jpeg"
+                  class="card-img-top"
+                  alt="web"
+                  height="300px"
+                >
                 <div class="card-body">
-                  <h5 class="card-title">Web Development</h5>
+                  <h5 class="card-title">
+                    Web Development
+                  </h5>
                   <p class="card-text">
-                    I've spent most of my software development career working on web applications. Laravel is my go-to framework for building efficient web solutions, and Vue.js offers a refreshing approach to crafting dynamic user interfaces.
+                    I've spent most of my software development career working on web applications.
+                    Laravel is my go-to framework for building efficient web solutions, and Vue.js
+                    offers a refreshing approach to crafting dynamic user interfaces.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/pm.jpeg" class="card-img-top" alt="project management" height="300px" />
+                <img
+                  src="/img/passion/pm.jpeg"
+                  class="card-img-top"
+                  alt="project management"
+                  height="300px"
+                >
                 <div class="card-body">
-                  <h5 class="card-title">Project Management</h5>
+                  <h5 class="card-title">
+                    Project Management
+                  </h5>
                   <p class="card-text">
-                    Managing projects is a skill I take great pride in. I achieved the highest grade (89%) in my undergraduate final year project, which boosted my confidence in my project management abilities.
+                    Managing projects is a skill I take great pride in. I achieved the highest grade
+                    (89%) in my undergraduate final year project, which boosted my confidence in my
+                    project management abilities.
                   </p>
                 </div>
               </div>
             </div>
             <div class="col">
               <div class="card h-100">
-                <img src="/img/passion/life.jpeg" class="card-img-top" alt="life" height="300px" />
+                <img
+                  src="/img/passion/life.jpeg"
+                  class="card-img-top"
+                  alt="life"
+                  height="300px"
+                >
                 <div class="card-body">
-                  <h5 class="card-title">Nature &amp; Life</h5>
+                  <h5 class="card-title">
+                    Nature &amp; Life
+                  </h5>
                   <p class="card-text">
-                    I cherish the tranquility of a quiet life surrounded by nature, accompanied by soothing music and a pack of snacks while indulging in my favorite films. This combination fuels my imagination and keeps my spirits high.
+                    I cherish the tranquility of a quiet life surrounded by nature, accompanied by
+                    soothing music and a pack of snacks while indulging in my favorite films. This
+                    combination fuels my imagination and keeps my spirits high.
                   </p>
                 </div>
               </div>
@@ -163,34 +244,46 @@ function getColor(tool) {
 
       <div class="section">
         <div class="section-header">
-          <div class="section-title">My Projects</div>
-          <div class="section-subtitle">Work that I have done and collaborated on 😎</div>
+          <div class="section-title">
+            My Projects
+          </div>
+          <div class="section-subtitle">
+            Work that I have done and collaborated on 😎
+          </div>
         </div>
         <div class="section-content">
           <div class="row row-cols-1 row-cols-md-2 g-4">
-            <div class="col" v-for="(project, index) in projectStore.getProjects" :key="index">
+            <div
+              v-for="(project, index) in projectStore.getProjects"
+              :key="index"
+              class="col"
+            >
               <div class="card shadow">
                 <img
                   :src="`img/projects/${project.image}.jpg`"
                   :alt="project.name"
                   class="card-img-top rounded-0"
                   lazy
-                />
+                >
 
                 <div class="card-body">
                   <div class="d-md-flex justify-content-between">
                     <div>
-                      <h4 class="mb-0">{{ project.name }}</h4>
-                      <p class="card-subtitle section-subtitle m-0">{{ project.subtitle }}</p>
+                      <h4 class="mb-0">
+                        {{ project.name }}
+                      </h4>
+                      <p class="card-subtitle section-subtitle m-0">
+                        {{ project.subtitle }}
+                      </p>
                     </div>
                     <div>
                       <span class="badge bg-primary float-end">
                         {{ project.job_title }}
                       </span>
-                      <br />
+                      <br>
                       <span
-                        class="badge bg-success float-end"
                         v-if="project.collaborated"
+                        class="badge bg-success float-end"
                         style="font-size: 70%"
                       >
                         team player
@@ -200,9 +293,9 @@ function getColor(tool) {
 
                   <div class="mt-2 mb-3">
                     <span
+                      v-for="(tool, toolIndex) in project.tools"
+                      :key="toolIndex"
                       class="me-2 badge"
-                      v-for="(tool, index) in project.tools"
-                      :key="index"
                       :style="`background-color: ${getColor(tool)};`"
                     >
                       {{ tool }}
@@ -210,12 +303,18 @@ function getColor(tool) {
                   </div>
 
                   <div class="card-text">
-                    <p v-html="project.content"></p>
+                    <p>{{ project.content }}</p>
 
-                    <div class="collapse" :id="`project${index}_duties`">
+                    <div
+                      :id="`project${index}_duties`"
+                      class="collapse"
+                    >
                       <ul>
-                        <li v-for="(duty, index) in project.duties" :key="index">
-                          <span v-html="duty"></span>
+                        <li
+                          v-for="(duty, dutyIndex) in project.duties"
+                          :key="dutyIndex"
+                        >
+                          <span>{{ duty }}</span>
                         </li>
                       </ul>
                     </div>
@@ -223,7 +322,10 @@ function getColor(tool) {
                 </div>
 
                 <div class="d-flex justify-content-between card-footer bg-transparent">
-                  <div class="duties dropend d-grid" v-if="project.duties.length">
+                  <div
+                    v-if="project.duties.length"
+                    class="duties dropend d-grid"
+                  >
                     <button
                       class="btn btn-sm btn-outline-dark border-0 dropdown-toggle shadow-none"
                       data-bs-toggle="collapse"
@@ -236,8 +338,8 @@ function getColor(tool) {
                     </button>
                   </div>
                   <a
-                    :href="project.website"
                     v-if="project.is_live"
+                    :href="project.website"
                     target="__blank"
                     class="btn btn-sm btn-outline-dark shadow-none"
                   >
@@ -252,14 +354,22 @@ function getColor(tool) {
 
       <div class="section">
         <div class="section-header">
-          <div class="section-title">My Favourite Tools</div>
+          <div class="section-title">
+            My Favourite Tools
+          </div>
           <div class="section-subtitle">
             Languages, frameworks and dev. environments I use for best productivity 🔥
           </div>
         </div>
         <div class="section-content">
-          <Swiper :slides-per-view="4" :space-between="50">
-            <SwiperSlide v-for="(tool, i) in toolStore.tools" :key="i">
+          <Swiper
+            :slides-per-view="4"
+            :space-between="50"
+          >
+            <SwiperSlide
+              v-for="(tool, i) in toolStore.tools"
+              :key="i"
+            >
               <img
                 width="600"
                 height="400"
@@ -267,16 +377,16 @@ function getColor(tool) {
                 :src="`img/tools/${tool.name}.png`"
                 :alt="tool.name"
                 lazy
-              />
+              >
             </SwiperSlide>
           </Swiper>
           <h5>Others:</h5>
           <p>
-            🏠 Vuex, Pinia, PestPHP <br />
-            🎨 Tailwind, Bootstrap, Photoshop <br />
-            🔏 PHP, JavaScript <br />
-            👶🏻 GoLang, Python <br />
-            🔲 Visual Studio Code <br />
+            🏠 Vuex, Pinia, PestPHP <br>
+            🎨 Tailwind, Bootstrap, Photoshop <br>
+            🔏 PHP, JavaScript <br>
+            👶🏻 GoLang, Python <br>
+            🔲 Visual Studio Code <br>
           </p>
         </div>
       </div>
