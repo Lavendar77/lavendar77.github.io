@@ -8,7 +8,7 @@
     "dev": "vite",
     "format": "prettier --write src/",
     "preview": "vite preview",
-    "deploy": "gh-pages -d dist && rm -rf dist"
+    "deploy": "vite build && gh-pages -d dist && rm -rf dist"
   },
   "dependencies": {
     "@jamescoyle/vue-icon": "^0.1.2",
